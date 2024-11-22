@@ -16,10 +16,9 @@ namespace taxcalculator
         {
 
             InitializeComponent();
-
+           
         }
-        int yearpaid   ;
-        
+        int yearpaid ;
         private void Form1_Load(object sender, EventArgs e)
         {
             txtDeduction.Enabled = false;
@@ -29,7 +28,7 @@ namespace taxcalculator
             txtChildnum.Enabled = false;
             lblChild.Enabled = false;
             
-
+            
 
         }
 
