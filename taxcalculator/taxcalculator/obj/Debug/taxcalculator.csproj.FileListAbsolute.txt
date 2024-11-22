@@ -3,3 +3,8 @@ C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\o
 C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.Properties.Resources.resources
 C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.csproj.GenerateResource.cache
 C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.csproj.CoreCompileInputs.cache
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\bin\Debug\taxcalculator.exe.config
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\bin\Debug\taxcalculator.exe
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\bin\Debug\taxcalculator.pdb
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.exe
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.pdb

@@ -14,18 +14,43 @@ namespace taxcalculator
     {
         public Form1()
         {
+
             InitializeComponent();
+
         }
-        int kuy;
-        int gg;
+        int yearpaid   ;
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-             
+            txtDeduction.Enabled = false;
+            Childcheck.Enabled = false;
+            checkSecurity.Enabled = false;
+            checkPension.Enabled = false;
+            txtChildnum.Enabled = false;
+            lblChild.Enabled = false;
+            
+
+
         }
 
         private void txtYearpaid_TextChanged(object sender, EventArgs e)
         {
+            txtDeduction.Enabled = true;
+            Childcheck.Enabled = true;
+            checkSecurity.Enabled = true;
+            checkPension.Enabled = true;
 
+        }
+
+        private void Childcheck_CheckedChanged(object sender, EventArgs e)
+        {
+            txtChildnum.Enabled = true;
+            lblChild.Enabled = true;
+        }
+
+        private void btnRun_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
