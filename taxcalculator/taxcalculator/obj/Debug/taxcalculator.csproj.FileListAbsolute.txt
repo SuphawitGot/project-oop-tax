@@ -1,0 +1,5 @@
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.csproj.AssemblyReference.cache
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.Form1.resources
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.Properties.Resources.resources
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.csproj.GenerateResource.cache
+C:\Users\Suphawit\Documents\GitHub\project-oop-tax\taxcalculator\taxcalculator\obj\Debug\taxcalculator.csproj.CoreCompileInputs.cache
