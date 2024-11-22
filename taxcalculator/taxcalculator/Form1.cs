@@ -18,23 +18,23 @@ namespace taxcalculator
             InitializeComponent();
            
         }
-        int yearpaid ;
+        double yearpaid ; // รายได้รายปี
+        double deduction; // ค่าลดหย่อน
+        int Childnum; // จำนวนบุตร
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtDeduction.Enabled = false;
+            txtDeduction.Enabled = false; //กำหนดให้ถ้ายังไม่ได้ใส่เงินรายปีจะใช้การลดหย่อนไม่ได้
             Childcheck.Enabled = false;
             checkSecurity.Enabled = false;
             checkPension.Enabled = false;
             txtChildnum.Enabled = false;
             lblChild.Enabled = false;
-            
-            
 
         }
 
         private void txtYearpaid_TextChanged(object sender, EventArgs e)
         {
-            txtDeduction.Enabled = true;
+            txtDeduction.Enabled = true; //ให้ใช้ตัวเลือกต่างๆได้หลังจากใส่จำนวนรายได้รายปีมาแล้ว
             Childcheck.Enabled = true;
             checkSecurity.Enabled = true;
             checkPension.Enabled = true;
@@ -43,13 +43,22 @@ namespace taxcalculator
 
         private void Childcheck_CheckedChanged(object sender, EventArgs e)
         {
-            txtChildnum.Enabled = true;
+            txtChildnum.Enabled = true; //ถ้าเลือกลดหย่อนบุตรให้เปิดตัวรับจำนวนบุตร
             lblChild.Enabled = true;
         }
 
         private void btnRun_Click(object sender, EventArgs e)
-        {
+        { 
+            Childnum = Convert.ToInt32(txtChildnum.Text); 
+            yearpaid = Convert.ToDouble(txtYearpaid.Text);
+            if (Childcheck.Checked) 
+            {
+                deduction = Childnum * 30000; //ค่าลดหย่อน = จำนวนบุตร * 30000
+            }
+            
+            
            
+            
         }
     }
 }
