@@ -181,7 +181,7 @@
             this.Controls.Add(this.lblYear);
             this.Controls.Add(this.txtYearpaid);
             this.Name = "Form1";
-            this.Text = "ะำ";
+            this.Text = "Tax calculator for Thailand";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

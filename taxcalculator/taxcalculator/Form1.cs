@@ -141,7 +141,6 @@ namespace taxcalculator
                 MessageBox.Show($"เกิดข้อผิดพลาด: {ex.Message}", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
                 return;
-
             }
         }
         public double Taxcalculated(double tax1) //สร้าง method ไว้คำนวณภาษี
@@ -155,39 +154,39 @@ namespace taxcalculator
             }
             else if (money > 150001)
             {
-                MessageBox.Show("tax = 5%");
                 tax = 0.05;
                 taxtotal = (money - 150000) * tax;
+                MessageBox.Show("tax = 5%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
             }
             else if (money > 300001)
             {
-                MessageBox.Show("tax = 10%");
                 tax = 0.10;
                 taxtotal = ((money - 300000) * tax) + 7500;
+                MessageBox.Show("tax = 10%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
             }
             else if (money > 500001)
             {
-                MessageBox.Show("tax = 15%");
                 tax = 0.15;
                 taxtotal = ((money - 500000) * tax) + 27500;
+                MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
             }
             else if (money > 750001)
             {
-                MessageBox.Show("tax = 20%");
                 tax = 0.20;
                 taxtotal = ((money - 750000) * tax) + 65000;
+                MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
             }
             else if (money > 1000001)
             {
-                MessageBox.Show("tax = 25%");
                 tax = 0.25;
                 taxtotal = ((money - 1000000) + tax) + 115000;
+                MessageBox.Show("tax = 25%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
             }
             else if (money > 2000001)
             {
-                MessageBox.Show("tax = 30%");
                 tax = 0.30;
                 taxtotal = ((money - 2000000) * tax) + 365000;
+                MessageBox.Show("tax = 30%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
             }
             else if (money > 5000001)
             {
