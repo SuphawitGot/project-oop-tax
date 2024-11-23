@@ -68,10 +68,10 @@ namespace taxcalculator
                 {       
                     deduction = 200000; //ถ้าค่าลดหย่อนเกิน 200000 ให้ค่าลดหย่อน = 2000000 
                 }
-                else deduction = 0;
+               
             }
             money = yearpaid - deduction;   
-            MessageBox.Show(money.ToString()); //-----------อาจจะทำผิดอย่าพึ่งทำอย่างกู----------------
+            MessageBox.Show(money.ToString()); //-----------อาจจะทำผิดอย่าพึ่งทำอย่างกู----------------//
            
             
         }
