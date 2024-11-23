@@ -32,19 +32,11 @@
               "RelativeDocumentMoniker": "taxcalculator\\Form1.cs",
               "ToolTip": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeToolTip": "taxcalculator\\Form1.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAIwI4AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwKkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T12:38:25.33Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -56,7 +48,16 @@
               "RelativeToolTip": "taxcalculator\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T12:37:31.371Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -68,7 +69,8 @@
               "RelativeToolTip": "taxcalculator\\deduction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T07:12:54.535Z"
+              "WhenOpened": "2024-11-23T07:12:54.535Z",
+              "EditorCaption": ""
             }
           ]
         }

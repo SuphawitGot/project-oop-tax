@@ -126,7 +126,7 @@ namespace taxcalculator
 
 
 
-                // แสดงผลลัพธ์
+                // แสดงผลลัพธ์  
                 MessageBox.Show($"รายได้รายปี: {yearpaid:C}\r\n" +
                                 $"ค่าลดหย่อนรวม: {deduction:C}\r\n" +
                                 $"รายได้สุทธิที่ต้องเสียภาษี: {money:C}",
@@ -143,6 +143,60 @@ namespace taxcalculator
                 return;
 
             }
+        }
+        public double Taxcalculated(double tax1) //สร้าง method ไว้คำนวณภาษี
+        {
+
+            double taxtotal; // ภาษีที่ต้องจ่าย
+            double tax; // ภาษี
+            if (money < 150000) // ถ้าเงินสุทธิไม่ถึง150,000ไม่ต้องจ่ายภาษี
+            {
+                MessageBox.Show("ไม่ต้องจ่ายภาษี");
+            }
+            else if (money > 150001)
+            {
+                MessageBox.Show("tax = 5%");
+                tax = 0.05;
+                taxtotal = (money - 150000) * tax;
+            }
+            else if (money > 300001)
+            {
+                MessageBox.Show("tax = 10%");
+                tax = 0.10;
+                taxtotal = ((money - 300000) * tax) + 7500;
+            }
+            else if (money > 500001)
+            {
+                MessageBox.Show("tax = 15%");
+                tax = 0.15;
+                taxtotal = ((money - 500000) * tax) + 27500;
+            }
+            else if (money > 750001)
+            {
+                MessageBox.Show("tax = 20%");
+                tax = 0.20;
+                taxtotal = ((money - 750000) * tax) + 65000;
+            }
+            else if (money > 1000001)
+            {
+                MessageBox.Show("tax = 25%");
+                tax = 0.25;
+                taxtotal = ((money - 1000000) + tax) + 115000;
+            }
+            else if (money > 2000001)
+            {
+                MessageBox.Show("tax = 30%");
+                tax = 0.30;
+                taxtotal = ((money - 2000000) * tax) + 365000;
+            }
+            else if (money > 5000001)
+            {
+                tax = 0.35;
+                taxtotal = ((money - 5000000) * tax) + 1265000;
+                MessageBox.Show("tax = 35%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
+            }
+
+            return tax1;
         }
     }
 }
