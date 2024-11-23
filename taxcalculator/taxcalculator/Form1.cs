@@ -31,7 +31,7 @@ namespace taxcalculator
             checkSecurity.Enabled = false;
             porteclidecheck.Enabled = false;
             txtChildnum.Enabled = false;
-            lblChild.Enabled = false;
+            
             SMPCheck.Enabled = false;
             GOCHcheck.Enabled = false;
             rmfsffcheck.Enabled = false;
@@ -54,7 +54,7 @@ namespace taxcalculator
         {
             //ถ้าเลือกลดหย่อนบุตรให้เปิดตัวรับจำนวนบุตร
             txtChildnum.Enabled = true; 
-            lblChild.Enabled = true;
+           
         }
 
         private void btnRun_Click(object sender, EventArgs e)
@@ -143,7 +143,9 @@ namespace taxcalculator
                 return;
             }
         }
-        public double Taxcalculated(double tax1) //สร้าง method ไว้คำนวณภาษี
+
+       //สร้าง method ไว้คำนวณภาษี
+        public double Taxcalculated(double tax1) 
         {
 
             double taxtotal; // ภาษีที่ต้องจ่าย

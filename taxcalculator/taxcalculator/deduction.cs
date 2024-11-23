@@ -19,6 +19,7 @@ namespace taxcalculator
         double security;//ประกันสังคม
         double tax;
         
+        
 
         
         

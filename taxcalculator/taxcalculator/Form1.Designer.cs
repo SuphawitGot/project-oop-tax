@@ -33,20 +33,38 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.Childcheck = new System.Windows.Forms.CheckBox();
             this.txtChildnum = new System.Windows.Forms.TextBox();
-            this.lblChild = new System.Windows.Forms.Label();
             this.checkSecurity = new System.Windows.Forms.CheckBox();
             this.porteclidecheck = new System.Windows.Forms.CheckBox();
             this.txtDeduction = new System.Windows.Forms.Label();
             this.SMPCheck = new System.Windows.Forms.CheckBox();
             this.GOCHcheck = new System.Windows.Forms.CheckBox();
             this.rmfsffcheck = new System.Windows.Forms.CheckBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Numbertxt = new System.Windows.Forms.TextBox();
+            this.Nametxt = new System.Windows.Forms.TextBox();
+            this.Lastnametxt = new System.Windows.Forms.TextBox();
+            this.Notxt = new System.Windows.Forms.TextBox();
+            this.datetxt = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtYearpaid
             // 
-            this.txtYearpaid.Location = new System.Drawing.Point(174, 47);
+            this.txtYearpaid.Location = new System.Drawing.Point(113, 40);
             this.txtYearpaid.Name = "txtYearpaid";
-            this.txtYearpaid.Size = new System.Drawing.Size(100, 20);
+            this.txtYearpaid.Size = new System.Drawing.Size(136, 20);
             this.txtYearpaid.TabIndex = 0;
             this.txtYearpaid.TextChanged += new System.EventHandler(this.txtYearpaid_TextChanged);
             // 
@@ -54,7 +72,7 @@
             // 
             this.lblYear.AutoSize = true;
             this.lblYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblYear.Location = new System.Drawing.Point(65, 46);
+            this.lblYear.Location = new System.Drawing.Point(19, 42);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(83, 18);
             this.lblYear.TabIndex = 1;
@@ -62,7 +80,7 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(573, 351);
+            this.btnRun.Location = new System.Drawing.Point(408, 345);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(137, 54);
             this.btnRun.TabIndex = 2;
@@ -74,36 +92,26 @@
             // 
             this.Childcheck.AutoSize = true;
             this.Childcheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.Childcheck.Location = new System.Drawing.Point(225, 96);
+            this.Childcheck.Location = new System.Drawing.Point(130, 82);
             this.Childcheck.Name = "Childcheck";
-            this.Childcheck.Size = new System.Drawing.Size(87, 17);
+            this.Childcheck.Size = new System.Drawing.Size(201, 17);
             this.Childcheck.TabIndex = 3;
-            this.Childcheck.Text = "ลดหย่อนบุตร";
+            this.Childcheck.Text = "ลดหย่อนบุตร(พร้แมกรอกจำนวนบุตร)";
             this.Childcheck.UseVisualStyleBackColor = true;
             this.Childcheck.CheckedChanged += new System.EventHandler(this.Childcheck_CheckedChanged);
             // 
             // txtChildnum
             // 
-            this.txtChildnum.Location = new System.Drawing.Point(432, 96);
+            this.txtChildnum.Location = new System.Drawing.Point(130, 105);
             this.txtChildnum.Name = "txtChildnum";
-            this.txtChildnum.Size = new System.Drawing.Size(77, 20);
+            this.txtChildnum.Size = new System.Drawing.Size(128, 20);
             this.txtChildnum.TabIndex = 4;
-            // 
-            // lblChild
-            // 
-            this.lblChild.AutoSize = true;
-            this.lblChild.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblChild.Location = new System.Drawing.Point(340, 98);
-            this.lblChild.Name = "lblChild";
-            this.lblChild.Size = new System.Drawing.Size(86, 13);
-            this.lblChild.TabIndex = 5;
-            this.lblChild.Text = "กรอกจำนวนบุตร";
             // 
             // checkSecurity
             // 
             this.checkSecurity.AutoSize = true;
             this.checkSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkSecurity.Location = new System.Drawing.Point(225, 119);
+            this.checkSecurity.Location = new System.Drawing.Point(130, 141);
             this.checkSecurity.Name = "checkSecurity";
             this.checkSecurity.Size = new System.Drawing.Size(125, 17);
             this.checkSecurity.TabIndex = 6;
@@ -114,7 +122,7 @@
             // 
             this.porteclidecheck.AutoSize = true;
             this.porteclidecheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.porteclidecheck.Location = new System.Drawing.Point(225, 142);
+            this.porteclidecheck.Location = new System.Drawing.Point(130, 164);
             this.porteclidecheck.Name = "porteclidecheck";
             this.porteclidecheck.Size = new System.Drawing.Size(93, 17);
             this.porteclidecheck.TabIndex = 7;
@@ -125,7 +133,7 @@
             // 
             this.txtDeduction.AutoSize = true;
             this.txtDeduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtDeduction.Location = new System.Drawing.Point(88, 93);
+            this.txtDeduction.Location = new System.Drawing.Point(19, 79);
             this.txtDeduction.Name = "txtDeduction";
             this.txtDeduction.Size = new System.Drawing.Size(105, 18);
             this.txtDeduction.TabIndex = 9;
@@ -134,7 +142,7 @@
             // SMPCheck
             // 
             this.SMPCheck.AutoSize = true;
-            this.SMPCheck.Location = new System.Drawing.Point(225, 165);
+            this.SMPCheck.Location = new System.Drawing.Point(130, 187);
             this.SMPCheck.Name = "SMPCheck";
             this.SMPCheck.Size = new System.Drawing.Size(183, 17);
             this.SMPCheck.TabIndex = 10;
@@ -144,7 +152,7 @@
             // GOCHcheck
             // 
             this.GOCHcheck.AutoSize = true;
-            this.GOCHcheck.Location = new System.Drawing.Point(225, 189);
+            this.GOCHcheck.Location = new System.Drawing.Point(130, 211);
             this.GOCHcheck.Name = "GOCHcheck";
             this.GOCHcheck.Size = new System.Drawing.Size(85, 17);
             this.GOCHcheck.TabIndex = 11;
@@ -154,12 +162,173 @@
             // rmfsffcheck
             // 
             this.rmfsffcheck.AutoSize = true;
-            this.rmfsffcheck.Location = new System.Drawing.Point(225, 213);
+            this.rmfsffcheck.Location = new System.Drawing.Point(130, 235);
             this.rmfsffcheck.Name = "rmfsffcheck";
             this.rmfsffcheck.Size = new System.Drawing.Size(112, 17);
             this.rmfsffcheck.TabIndex = 12;
             this.rmfsffcheck.Text = "กองทุนRMF / SFF";
             this.rmfsffcheck.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 22);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(654, 556);
+            this.tabControl1.TabIndex = 13;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.datetxt);
+            this.tabPage1.Controls.Add(this.Notxt);
+            this.tabPage1.Controls.Add(this.Lastnametxt);
+            this.tabPage1.Controls.Add(this.Nametxt);
+            this.tabPage1.Controls.Add(this.Numbertxt);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(646, 530);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.checkSecurity);
+            this.tabPage2.Controls.Add(this.btnRun);
+            this.tabPage2.Controls.Add(this.Childcheck);
+            this.tabPage2.Controls.Add(this.SMPCheck);
+            this.tabPage2.Controls.Add(this.rmfsffcheck);
+            this.tabPage2.Controls.Add(this.txtDeduction);
+            this.tabPage2.Controls.Add(this.lblYear);
+            this.tabPage2.Controls.Add(this.txtYearpaid);
+            this.tabPage2.Controls.Add(this.txtChildnum);
+            this.tabPage2.Controls.Add(this.porteclidecheck);
+            this.tabPage2.Controls.Add(this.GOCHcheck);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(646, 530);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(186, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "เลขบัตรประชาชน";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(186, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ชื่อ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(186, 193);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "นามสกุล";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(183, 245);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "เบอร์โทร";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(186, 291);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "วันเดือนปีเกิด";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(340, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 32);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "ยืนยันข้อมูล";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Numbertxt
+            // 
+            this.Numbertxt.Location = new System.Drawing.Point(281, 87);
+            this.Numbertxt.Name = "Numbertxt";
+            this.Numbertxt.Size = new System.Drawing.Size(150, 20);
+            this.Numbertxt.TabIndex = 6;
+            // 
+            // Nametxt
+            // 
+            this.Nametxt.Location = new System.Drawing.Point(281, 135);
+            this.Nametxt.Name = "Nametxt";
+            this.Nametxt.Size = new System.Drawing.Size(150, 20);
+            this.Nametxt.TabIndex = 7;
+            // 
+            // Lastnametxt
+            // 
+            this.Lastnametxt.Location = new System.Drawing.Point(281, 193);
+            this.Lastnametxt.Name = "Lastnametxt";
+            this.Lastnametxt.Size = new System.Drawing.Size(150, 20);
+            this.Lastnametxt.TabIndex = 8;
+            // 
+            // Notxt
+            // 
+            this.Notxt.Location = new System.Drawing.Point(281, 245);
+            this.Notxt.Name = "Notxt";
+            this.Notxt.Size = new System.Drawing.Size(150, 20);
+            this.Notxt.TabIndex = 9;
+            // 
+            // datetxt
+            // 
+            this.datetxt.Location = new System.Drawing.Point(281, 288);
+            this.datetxt.Name = "datetxt";
+            this.datetxt.Size = new System.Drawing.Size(150, 20);
+            this.datetxt.TabIndex = 10;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(173, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 32);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "ต้องการกรอกข้อมูล";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(335, 40);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(285, 246);
+            this.textBox1.TabIndex = 13;
             // 
             // Form1
             // 
@@ -167,24 +336,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rmfsffcheck);
-            this.Controls.Add(this.GOCHcheck);
-            this.Controls.Add(this.SMPCheck);
-            this.Controls.Add(this.txtDeduction);
-            this.Controls.Add(this.porteclidecheck);
-            this.Controls.Add(this.checkSecurity);
-            this.Controls.Add(this.lblChild);
-            this.Controls.Add(this.txtChildnum);
-            this.Controls.Add(this.Childcheck);
-            this.Controls.Add(this.btnRun);
-            this.Controls.Add(this.lblYear);
-            this.Controls.Add(this.txtYearpaid);
+            this.ClientSize = new System.Drawing.Size(672, 512);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Tax calculator for Thailand";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -195,13 +357,28 @@
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.CheckBox Childcheck;
         private System.Windows.Forms.TextBox txtChildnum;
-        private System.Windows.Forms.Label lblChild;
         private System.Windows.Forms.CheckBox checkSecurity;
         private System.Windows.Forms.CheckBox porteclidecheck;
         private System.Windows.Forms.Label txtDeduction;
         private System.Windows.Forms.CheckBox SMPCheck;
         private System.Windows.Forms.CheckBox GOCHcheck;
         private System.Windows.Forms.CheckBox rmfsffcheck;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox datetxt;
+        private System.Windows.Forms.TextBox Notxt;
+        private System.Windows.Forms.TextBox Lastnametxt;
+        private System.Windows.Forms.TextBox Nametxt;
+        private System.Windows.Forms.TextBox Numbertxt;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
