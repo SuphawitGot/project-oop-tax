@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,12 @@ namespace taxcalculator
         double yearpaid; // รายได้รายปี
         double deduc; // ค่าลดหย่อน
         int Childnum; // จำนวนบุตร
-        double money; //เงินสุทธิ
+        double monei = 500; //เงินสุทธิ
         double security;//ประกันสังคม
+        double tax;
+        
 
-
+        
         
 
 

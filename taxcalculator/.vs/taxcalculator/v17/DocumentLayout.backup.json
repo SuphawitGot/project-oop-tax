@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|c:\\users\\suphawit\\documents\\github\\project-oop-tax\\taxcalculator\\taxcalculator\\deduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\deduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\deduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|c:\\users\\suphawit\\documents\\github\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeDocumentMoniker": "taxcalculator\\Form1.cs",
               "ToolTip": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeToolTip": "taxcalculator\\Form1.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T12:38:25.33Z",
               "IsPinned": true,
@@ -48,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeDocumentMoniker": "taxcalculator\\Form1.cs",
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "deduction.cs",
               "DocumentMoniker": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\deduction.cs",
               "RelativeDocumentMoniker": "taxcalculator\\deduction.cs",
               "ToolTip": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\deduction.cs",
               "RelativeToolTip": "taxcalculator\\deduction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T07:12:54.535Z",
               "EditorCaption": ""
