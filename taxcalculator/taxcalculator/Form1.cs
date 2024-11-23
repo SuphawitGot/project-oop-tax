@@ -71,7 +71,7 @@ namespace taxcalculator
                
             }
             money = yearpaid - deduction;   
-            MessageBox.Show(money.ToString()); //-----------อาจจะทำผิดอย่าพึ่งทำอย่างกู----------------//
+            MessageBox.Show(money.ToString()); //-----------อาจจะทำผิดอย่าพึ่งทำอย่างกู--------------//
            
             
         }
