@@ -35,13 +35,16 @@
             this.txtChildnum = new System.Windows.Forms.TextBox();
             this.lblChild = new System.Windows.Forms.Label();
             this.checkSecurity = new System.Windows.Forms.CheckBox();
-            this.checkPension = new System.Windows.Forms.CheckBox();
+            this.porteclidecheck = new System.Windows.Forms.CheckBox();
             this.txtDeduction = new System.Windows.Forms.Label();
+            this.SMPCheck = new System.Windows.Forms.CheckBox();
+            this.GOCHcheck = new System.Windows.Forms.CheckBox();
+            this.rmfsffcheck = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtYearpaid
             // 
-            this.txtYearpaid.Location = new System.Drawing.Point(317, 44);
+            this.txtYearpaid.Location = new System.Drawing.Point(174, 47);
             this.txtYearpaid.Name = "txtYearpaid";
             this.txtYearpaid.Size = new System.Drawing.Size(100, 20);
             this.txtYearpaid.TabIndex = 0;
@@ -51,7 +54,7 @@
             // 
             this.lblYear.AutoSize = true;
             this.lblYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblYear.Location = new System.Drawing.Point(214, 43);
+            this.lblYear.Location = new System.Drawing.Point(65, 46);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(83, 18);
             this.lblYear.TabIndex = 1;
@@ -59,7 +62,7 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(289, 341);
+            this.btnRun.Location = new System.Drawing.Point(573, 351);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(137, 54);
             this.btnRun.TabIndex = 2;
@@ -71,7 +74,7 @@
             // 
             this.Childcheck.AutoSize = true;
             this.Childcheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.Childcheck.Location = new System.Drawing.Point(443, 150);
+            this.Childcheck.Location = new System.Drawing.Point(225, 96);
             this.Childcheck.Name = "Childcheck";
             this.Childcheck.Size = new System.Drawing.Size(87, 17);
             this.Childcheck.TabIndex = 3;
@@ -81,7 +84,7 @@
             // 
             // txtChildnum
             // 
-            this.txtChildnum.Location = new System.Drawing.Point(443, 185);
+            this.txtChildnum.Location = new System.Drawing.Point(432, 96);
             this.txtChildnum.Name = "txtChildnum";
             this.txtChildnum.Size = new System.Drawing.Size(77, 20);
             this.txtChildnum.TabIndex = 4;
@@ -90,7 +93,7 @@
             // 
             this.lblChild.AutoSize = true;
             this.lblChild.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblChild.Location = new System.Drawing.Point(351, 188);
+            this.lblChild.Location = new System.Drawing.Point(340, 98);
             this.lblChild.Name = "lblChild";
             this.lblChild.Size = new System.Drawing.Size(86, 13);
             this.lblChild.TabIndex = 5;
@@ -100,41 +103,76 @@
             // 
             this.checkSecurity.AutoSize = true;
             this.checkSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkSecurity.Location = new System.Drawing.Point(546, 150);
+            this.checkSecurity.Location = new System.Drawing.Point(225, 119);
             this.checkSecurity.Name = "checkSecurity";
             this.checkSecurity.Size = new System.Drawing.Size(125, 17);
             this.checkSecurity.TabIndex = 6;
             this.checkSecurity.Text = "ลดหย่อนประกันสังคม";
             this.checkSecurity.UseVisualStyleBackColor = true;
             // 
-            // checkPension
+            // porteclidecheck
             // 
-            this.checkPension.AutoSize = true;
-            this.checkPension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkPension.Location = new System.Drawing.Point(686, 150);
-            this.checkPension.Name = "checkPension";
-            this.checkPension.Size = new System.Drawing.Size(93, 17);
-            this.checkPension.TabIndex = 7;
-            this.checkPension.Text = "ประกันบำนาญ";
-            this.checkPension.UseVisualStyleBackColor = true;
+            this.porteclidecheck.AutoSize = true;
+            this.porteclidecheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.porteclidecheck.Location = new System.Drawing.Point(225, 142);
+            this.porteclidecheck.Name = "porteclidecheck";
+            this.porteclidecheck.Size = new System.Drawing.Size(93, 17);
+            this.porteclidecheck.TabIndex = 7;
+            this.porteclidecheck.Text = "ประกันบำนาญ";
+            this.porteclidecheck.UseVisualStyleBackColor = true;
             // 
             // txtDeduction
             // 
             this.txtDeduction.AutoSize = true;
             this.txtDeduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtDeduction.Location = new System.Drawing.Point(321, 106);
+            this.txtDeduction.Location = new System.Drawing.Point(88, 93);
             this.txtDeduction.Name = "txtDeduction";
             this.txtDeduction.Size = new System.Drawing.Size(105, 18);
             this.txtDeduction.TabIndex = 9;
             this.txtDeduction.Text = "เลือกการลดหย่อน";
             // 
+            // SMPCheck
+            // 
+            this.SMPCheck.AutoSize = true;
+            this.SMPCheck.Location = new System.Drawing.Point(225, 165);
+            this.SMPCheck.Name = "SMPCheck";
+            this.SMPCheck.Size = new System.Drawing.Size(183, 17);
+            this.SMPCheck.TabIndex = 10;
+            this.SMPCheck.Text = "ลดหย่อนส่วนตัว/คู่สมรส/คนพิการ";
+            this.SMPCheck.UseVisualStyleBackColor = true;
+            // 
+            // GOCHcheck
+            // 
+            this.GOCHcheck.AutoSize = true;
+            this.GOCHcheck.Location = new System.Drawing.Point(225, 189);
+            this.GOCHcheck.Name = "GOCHcheck";
+            this.GOCHcheck.Size = new System.Drawing.Size(85, 17);
+            this.GOCHcheck.TabIndex = 11;
+            this.GOCHcheck.Text = "กองทุน กอช.";
+            this.GOCHcheck.UseVisualStyleBackColor = true;
+            // 
+            // rmfsffcheck
+            // 
+            this.rmfsffcheck.AutoSize = true;
+            this.rmfsffcheck.Location = new System.Drawing.Point(225, 213);
+            this.rmfsffcheck.Name = "rmfsffcheck";
+            this.rmfsffcheck.Size = new System.Drawing.Size(112, 17);
+            this.rmfsffcheck.TabIndex = 12;
+            this.rmfsffcheck.Text = "กองทุนRMF / SFF";
+            this.rmfsffcheck.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rmfsffcheck);
+            this.Controls.Add(this.GOCHcheck);
+            this.Controls.Add(this.SMPCheck);
             this.Controls.Add(this.txtDeduction);
-            this.Controls.Add(this.checkPension);
+            this.Controls.Add(this.porteclidecheck);
             this.Controls.Add(this.checkSecurity);
             this.Controls.Add(this.lblChild);
             this.Controls.Add(this.txtChildnum);
@@ -159,8 +197,11 @@
         private System.Windows.Forms.TextBox txtChildnum;
         private System.Windows.Forms.Label lblChild;
         private System.Windows.Forms.CheckBox checkSecurity;
-        private System.Windows.Forms.CheckBox checkPension;
+        private System.Windows.Forms.CheckBox porteclidecheck;
         private System.Windows.Forms.Label txtDeduction;
+        private System.Windows.Forms.CheckBox SMPCheck;
+        private System.Windows.Forms.CheckBox GOCHcheck;
+        private System.Windows.Forms.CheckBox rmfsffcheck;
     }
 }
 
