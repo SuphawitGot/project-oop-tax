@@ -65,7 +65,60 @@ namespace taxcalculator
             txtChildnum.Enabled = true; 
            
         }
+         public double Taxcalculated() 
+         {
 
+            double taxtotal=0; // ภาษีที่ต้องจ่าย
+            double tax=0; // ภาษี
+            if (money < 150000) // ถ้าเงินสุทธิไม่ถึง150,000ไม่ต้องจ่ายภาษี
+            {
+                MessageBox.Show("ไม่ต้องจ่ายภาษี");
+            }
+            else if (money > 150001)
+            {
+                tax = 0.05;
+                taxtotal = (money - 150000) * tax;
+                MessageBox.Show("tax = 5%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+            else if (money > 300001)
+            {
+                tax = 0.10;
+                taxtotal = ((money - 300000) * tax) + 7500;
+                MessageBox.Show("tax = 10%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+            else if (money > 500001)
+            {
+                tax = 0.15;
+                taxtotal = ((money - 500000) * tax) + 27500;
+                MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+            else if (money > 750001)
+            {
+                tax = 0.20;
+                taxtotal = ((money - 750000) * tax) + 65000;
+                MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+            else if (money > 1000001)
+            {
+                tax = 0.25;
+                taxtotal = ((money - 1000000) + tax) + 115000;
+                MessageBox.Show("tax = 25%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+            else if (money > 2000001)
+            {
+                tax = 0.30;
+                taxtotal = ((money - 2000000) * tax) + 365000;
+                MessageBox.Show("tax = 30%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+            else if (money > 5000001)
+            {
+                tax = 0.35;
+                taxtotal = ((money - 5000000) * tax) + 1265000;
+                MessageBox.Show("tax = 35%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+            }
+
+            return taxtotal;
+         }
         private void btnRun_Click(object sender, EventArgs e)
         {
 
@@ -134,13 +187,16 @@ namespace taxcalculator
                     money = yearpaid - deduction;
 
 
-
+                double taxtotal = Taxcalculated();
                 // แสดงผลลัพธ์  
                 MessageBox.Show($"รายได้รายปี: {yearpaid:C}\r\n" +
-                                $"ค่าลดหย่อนรวม: {deduction:C}\r\n" +
-                                $"รายได้สุทธิที่ต้องเสียภาษี: {money:C}",
-                                "ผลการคำนวณ", MessageBoxButtons.OK,                
-                                MessageBoxIcon.Information);
+                        $"ค่าลดหย่อนรวม: {deduction:C}\r\n" +
+                        $"เงินสุทธิ: {money:C}\r\n" +
+                        $"ภาษีที่ต้องชำระ: {taxtotal:C}",
+                        "ผลการคำนวณ", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+
             }
 
             //หากไม่มีการป้อนก็จะให้เเสดงผลตามคำสั่ง
@@ -154,60 +210,7 @@ namespace taxcalculator
         }
 
        //สร้าง method ไว้คำนวณภาษี
-        public double Taxcalculated(double tax1) 
-        {
-
-            double taxtotal; // ภาษีที่ต้องจ่าย
-            double tax; // ภาษี
-            if (money < 150000) // ถ้าเงินสุทธิไม่ถึง150,000ไม่ต้องจ่ายภาษี
-            {
-                MessageBox.Show("ไม่ต้องจ่ายภาษี");
-            }
-            else if (money > 150001)
-            {
-                tax = 0.05;
-                taxtotal = (money - 150000) * tax;
-                MessageBox.Show("tax = 5%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-            else if (money > 300001)
-            {
-                tax = 0.10;
-                taxtotal = ((money - 300000) * tax) + 7500;
-                MessageBox.Show("tax = 10%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-            else if (money > 500001)
-            {
-                tax = 0.15;
-                taxtotal = ((money - 500000) * tax) + 27500;
-                MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-            else if (money > 750001)
-            {
-                tax = 0.20;
-                taxtotal = ((money - 750000) * tax) + 65000;
-                MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-            else if (money > 1000001)
-            {
-                tax = 0.25;
-                taxtotal = ((money - 1000000) + tax) + 115000;
-                MessageBox.Show("tax = 25%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-            else if (money > 2000001)
-            {
-                tax = 0.30;
-                taxtotal = ((money - 2000000) * tax) + 365000;
-                MessageBox.Show("tax = 30%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-            else if (money > 5000001)
-            {
-                tax = 0.35;
-                taxtotal = ((money - 5000000) * tax) + 1265000;
-                MessageBox.Show("tax = 35%" + "\r\n" + "Total Tax: " + taxtotal.ToString());
-            }
-
-            return tax1;
-        }
+       
         private void ShowProperty(info oc)
         {
             string StrOut = "";
@@ -216,6 +219,7 @@ namespace taxcalculator
             StrOut += "นามสกุล   " + oc.Surname + "\r\n";
             StrOut += "เบอร์โทร  " + oc.Callnum.ToString()+ "\r\n";
             StrOut += "วัน/เดือน/ปีเกิด "  +oc.Birthdate + "\r\n";
+
             lblOUT.Text = StrOut;
         }
         private void button2_Click(object sender, EventArgs e)

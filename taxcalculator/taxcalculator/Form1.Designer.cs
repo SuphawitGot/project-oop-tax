@@ -88,7 +88,7 @@
             this.btnRun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRun.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRun.Location = new System.Drawing.Point(445, 385);
+            this.btnRun.Location = new System.Drawing.Point(434, 385);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(137, 54);
             this.btnRun.TabIndex = 2;
