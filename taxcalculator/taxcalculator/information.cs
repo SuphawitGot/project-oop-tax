@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace taxcalculator
 {
 
-    internal class deduction
+    internal class information 
     {
         double yearpaid; // รายได้รายปี
         double deduc; // ค่าลดหย่อน
