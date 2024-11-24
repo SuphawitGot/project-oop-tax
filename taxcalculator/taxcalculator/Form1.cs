@@ -23,8 +23,10 @@ namespace taxcalculator
         double yearpaid ; // รายได้รายปี
         double deduction =0; // ค่าลดหย่อน
         int Childnum; // จำนวนบุตร
+        int parentnum; //จำนวนพ่อแม่
         double money; //เงินสุทธิ
         double security;//ประกันสังคม
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //กำหนดให้ถ้ายังไม่ได้ใส่รายได้ต่อปีจะใช้การลดหย่อนไม่ได้
@@ -32,11 +34,13 @@ namespace taxcalculator
             Childcheck.Enabled = false;
             checkSecurity.Enabled = false;
             porteclidecheck.Enabled = false;
-            txtChildnum.Enabled = false;
-            
+            txtChildnum.Enabled = false;            
             SMPCheck.Enabled = false;
             GOCHcheck.Enabled = false;
             rmfsffcheck.Enabled = false;
+            parentcheck.Enabled = false;
+            techcheck.Enabled = false;
+            chargcheck.Enabled = false;
 
             Numbertxt.Enabled = false;
             Nametxt.Enabled = false;
@@ -44,6 +48,17 @@ namespace taxcalculator
             Notxt.Enabled = false;
             datetxt.Enabled = false;
             btnConfirm.Enabled = false;
+
+            numlbl.Enabled = false;
+            namlbl.Enabled = false;
+            lastlbl.Enabled = false;
+            nolbl.Enabled = false;
+            datlbl.Enabled = false;
+            lblYear.Enabled = false;
+            txtYearpaid.Enabled = false;
+
+            pictureBox2.ImageLocation
+                = Application.StartupPath + "\\RSURE.png ";
         }
 
         private void txtYearpaid_TextChanged(object sender, EventArgs e)
@@ -56,6 +71,9 @@ namespace taxcalculator
             SMPCheck.Enabled=true;
             GOCHcheck.Enabled=true;
             rmfsffcheck.Enabled=true;
+            parentcheck.Enabled=true;
+            techcheck.Enabled=true;
+            chargcheck.Enabled=true;
 
         }
 
@@ -183,8 +201,38 @@ namespace taxcalculator
                         ? 500000 : pensionDeduction;
 
                 }
-                    // คำนวณเงินสุทธิ (รายได้ - ค่าลดหย่อน)
-                    money = yearpaid - deduction;
+
+                //คำนวญเมื่อพ่อเเม่เช็ค
+                if (parentcheck.Checked && int.TryParse(parenttxt.Text, out parentnum))
+                {
+
+                    // ค่าลดหย่อนจากพ่อแม่จำนวน * 30000
+                    deduction += parentnum * 30000;
+
+                }
+                //คำนวญเมื่อสะสมดดนเช็ค
+                if(chargcheck.Checked)
+                {
+                    // ค่าลดหย่อนได้100000
+                    deduction += 100000;
+
+                }
+
+                //คำนวญเมื่อครโดนเช็ค
+                if (techcheck.Checked)
+                {
+
+                    //คำนวยจากรายได้*15%ของเงิน
+                    double pensionDeduction = (yearpaid * 15) / 100;
+                    //หากเกิน200000 ให้ลดหย่อน=200000
+                    deduction += (pensionDeduction > 200000)
+                        ? 200000 : pensionDeduction;
+                }
+                {
+                    
+                }
+                // คำนวณเงินสุทธิ (รายได้ - ค่าลดหย่อน)
+                money = yearpaid - deduction;
 
 
                 double taxtotal = Taxcalculated();
@@ -213,6 +261,7 @@ namespace taxcalculator
        
         private void ShowProperty(info oc)
         {
+
             string StrOut = "";
             StrOut += "เลขบัตรประชาชน    " + oc.idnum + "\r\n";
             StrOut += "ชื่อ   " + oc.Name + "\r\n";
@@ -233,11 +282,20 @@ namespace taxcalculator
             Notxt.Enabled = true;
             datetxt.Enabled = true;
             btnConfirm.Enabled = true;
+            numlbl.Enabled = true;
+            namlbl.Enabled = true;
+            lastlbl.Enabled = true;
+            nolbl.Enabled = true;
+            datlbl.Enabled = true;
 
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+
+            lblYear.Enabled = true;
+            txtYearpaid.Enabled = true;
+
             if (objinfo == null)
             {
                 MessageBox.Show("Object is not initialized. Please click the initialize button first.");
@@ -249,6 +307,12 @@ namespace taxcalculator
             objinfo.Callnum = Notxt.Text;
             objinfo.Birthdate = datetxt.Text; 
             ShowProperty(objinfo);
+
+            MessageBox.Show("ยืนยันข้อมูลเสร็จสิ้น");
+
+            pictureBox1.ImageLocation
+                =Application.StartupPath + "\\Cow.jpg ";
+
         }
     }
 }
