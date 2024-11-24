@@ -37,6 +37,13 @@ namespace taxcalculator
             SMPCheck.Enabled = false;
             GOCHcheck.Enabled = false;
             rmfsffcheck.Enabled = false;
+
+            Numbertxt.Enabled = false;
+            Nametxt.Enabled = false;
+            Lastnametxt.Enabled = false;
+            Notxt.Enabled = false;
+            datetxt.Enabled = false;
+            btnConfirm.Enabled = false;
         }
 
         private void txtYearpaid_TextChanged(object sender, EventArgs e)
@@ -203,12 +210,12 @@ namespace taxcalculator
         }
         private void ShowProperty(info oc)
         {
-            string StrOut = " ";
-            StrOut = "เลขบัตรประชาชน " + oc.idnum + "\r\n";
-            StrOut = "ชื่อ " + oc.Name + "\r\n";
-            StrOut = "นามสกุล " + oc.Surname + "\r\n";
-            StrOut = "เบอร์โทร " + oc.Callnum + "\r\n";
-            StrOut = "วัน/เดือน/ปีเกิด " +oc.Birthdate + "\r\n";
+            string StrOut = "";
+            StrOut += "เลขบัตรประชาชน    " + oc.idnum + "\r\n";
+            StrOut += "ชื่อ   " + oc.Name + "\r\n";
+            StrOut += "นามสกุล   " + oc.Surname + "\r\n";
+            StrOut += "เบอร์โทร  " + oc.Callnum.ToString()+ "\r\n";
+            StrOut += "วัน/เดือน/ปีเกิด "  +oc.Birthdate + "\r\n";
             lblOUT.Text = StrOut;
         }
         private void button2_Click(object sender, EventArgs e)
@@ -216,11 +223,22 @@ namespace taxcalculator
             objinfo = new info();
             ShowProperty(objinfo);
             btnOBJ.Enabled = false;
+            Numbertxt.Enabled = true;
+            Nametxt.Enabled = true;
+            Lastnametxt.Enabled = true;
+            Notxt.Enabled = true;
+            datetxt.Enabled = true;
+            btnConfirm.Enabled = true;
 
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            if (objinfo == null)
+            {
+                MessageBox.Show("Object is not initialized. Please click the initialize button first.");
+                return;
+            }
             objinfo.idnum = Numbertxt.Text;
             objinfo.Name = Nametxt.Text;
             objinfo.Surname = Lastnametxt.Text;

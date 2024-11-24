@@ -11,7 +11,7 @@ namespace taxcalculator
         private string id; // เลขบัตรประชาชน
         private string name; //ชื่อ
         private string surname; //นามสกุล
-        private string callnum; //เบอร์โทร
+        private String callnum; //เบอร์โทร
         private string birthdate; //วันเกิด   
 
         public string idnum
@@ -47,7 +47,7 @@ namespace taxcalculator
                 surname = value;
             }
         }
-        public string Callnum
+        public String Callnum
         {
             get
             {
