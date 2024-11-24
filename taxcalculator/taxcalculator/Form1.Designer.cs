@@ -41,6 +41,7 @@
             this.rmfsffcheck = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnOBJ = new System.Windows.Forms.Button();
             this.datetxt = new System.Windows.Forms.TextBox();
             this.Notxt = new System.Windows.Forms.TextBox();
@@ -54,23 +55,22 @@
             this.namlbl = new System.Windows.Forms.Label();
             this.numlbl = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lblOUT = new System.Windows.Forms.Label();
-            this.parentcheck = new System.Windows.Forms.CheckBox();
-            this.chargcheck = new System.Windows.Forms.CheckBox();
-            this.techcheck = new System.Windows.Forms.CheckBox();
-            this.parenttxt = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.parenttxt = new System.Windows.Forms.TextBox();
+            this.techcheck = new System.Windows.Forms.CheckBox();
+            this.chargcheck = new System.Windows.Forms.CheckBox();
+            this.parentcheck = new System.Windows.Forms.CheckBox();
+            this.lblOUT = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtYearpaid
             // 
-            this.txtYearpaid.Location = new System.Drawing.Point(130, 39);
+            this.txtYearpaid.Location = new System.Drawing.Point(126, 39);
             this.txtYearpaid.Name = "txtYearpaid";
             this.txtYearpaid.Size = new System.Drawing.Size(136, 23);
             this.txtYearpaid.TabIndex = 0;
@@ -108,7 +108,7 @@
             // 
             this.Childcheck.AutoSize = true;
             this.Childcheck.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.Childcheck.Location = new System.Drawing.Point(130, 82);
+            this.Childcheck.Location = new System.Drawing.Point(126, 68);
             this.Childcheck.Name = "Childcheck";
             this.Childcheck.Size = new System.Drawing.Size(224, 20);
             this.Childcheck.TabIndex = 3;
@@ -118,7 +118,7 @@
             // 
             // txtChildnum
             // 
-            this.txtChildnum.Location = new System.Drawing.Point(130, 108);
+            this.txtChildnum.Location = new System.Drawing.Point(126, 94);
             this.txtChildnum.Name = "txtChildnum";
             this.txtChildnum.Size = new System.Drawing.Size(93, 23);
             this.txtChildnum.TabIndex = 4;
@@ -127,7 +127,7 @@
             // 
             this.checkSecurity.AutoSize = true;
             this.checkSecurity.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.checkSecurity.Location = new System.Drawing.Point(126, 212);
+            this.checkSecurity.Location = new System.Drawing.Point(126, 204);
             this.checkSecurity.Name = "checkSecurity";
             this.checkSecurity.Size = new System.Drawing.Size(140, 20);
             this.checkSecurity.TabIndex = 6;
@@ -138,7 +138,7 @@
             // 
             this.porteclidecheck.AutoSize = true;
             this.porteclidecheck.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.porteclidecheck.Location = new System.Drawing.Point(126, 264);
+            this.porteclidecheck.Location = new System.Drawing.Point(126, 256);
             this.porteclidecheck.Name = "porteclidecheck";
             this.porteclidecheck.Size = new System.Drawing.Size(101, 20);
             this.porteclidecheck.TabIndex = 7;
@@ -149,7 +149,7 @@
             // 
             this.txtDeduction.AutoSize = true;
             this.txtDeduction.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.txtDeduction.Location = new System.Drawing.Point(12, 83);
+            this.txtDeduction.Location = new System.Drawing.Point(12, 72);
             this.txtDeduction.Name = "txtDeduction";
             this.txtDeduction.Size = new System.Drawing.Size(103, 16);
             this.txtDeduction.TabIndex = 9;
@@ -158,7 +158,7 @@
             // SMPCheck
             // 
             this.SMPCheck.AutoSize = true;
-            this.SMPCheck.Location = new System.Drawing.Point(130, 137);
+            this.SMPCheck.Location = new System.Drawing.Point(126, 123);
             this.SMPCheck.Name = "SMPCheck";
             this.SMPCheck.Size = new System.Drawing.Size(203, 20);
             this.SMPCheck.TabIndex = 10;
@@ -168,7 +168,7 @@
             // GOCHcheck
             // 
             this.GOCHcheck.AutoSize = true;
-            this.GOCHcheck.Location = new System.Drawing.Point(126, 290);
+            this.GOCHcheck.Location = new System.Drawing.Point(126, 282);
             this.GOCHcheck.Name = "GOCHcheck";
             this.GOCHcheck.Size = new System.Drawing.Size(97, 20);
             this.GOCHcheck.TabIndex = 11;
@@ -178,7 +178,7 @@
             // rmfsffcheck
             // 
             this.rmfsffcheck.AutoSize = true;
-            this.rmfsffcheck.Location = new System.Drawing.Point(126, 316);
+            this.rmfsffcheck.Location = new System.Drawing.Point(126, 308);
             this.rmfsffcheck.Name = "rmfsffcheck";
             this.rmfsffcheck.Size = new System.Drawing.Size(125, 20);
             this.rmfsffcheck.TabIndex = 12;
@@ -218,6 +218,15 @@
             this.tabPage1.Size = new System.Drawing.Size(686, 486);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ข้อมูล";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(271, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(174, 117);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
             // btnOBJ
             // 
@@ -348,53 +357,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "คำนวณภาษี";
             // 
-            // lblOUT
-            // 
-            this.lblOUT.BackColor = System.Drawing.Color.MintCream;
-            this.lblOUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOUT.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblOUT.Location = new System.Drawing.Point(358, 45);
-            this.lblOUT.Name = "lblOUT";
-            this.lblOUT.Size = new System.Drawing.Size(314, 305);
-            this.lblOUT.TabIndex = 13;
-            // 
-            // parentcheck
-            // 
-            this.parentcheck.AutoSize = true;
-            this.parentcheck.Location = new System.Drawing.Point(130, 163);
-            this.parentcheck.Name = "parentcheck";
-            this.parentcheck.Size = new System.Drawing.Size(93, 20);
-            this.parentcheck.TabIndex = 14;
-            this.parentcheck.Text = "เลี้ยงดูพ่อแม่";
-            this.parentcheck.UseVisualStyleBackColor = true;
-            // 
-            // chargcheck
-            // 
-            this.chargcheck.AutoSize = true;
-            this.chargcheck.Location = new System.Drawing.Point(126, 238);
-            this.chargcheck.Name = "chargcheck";
-            this.chargcheck.Size = new System.Drawing.Size(114, 20);
-            this.chargcheck.TabIndex = 15;
-            this.chargcheck.Text = "ประกันชีวิตสะสม";
-            this.chargcheck.UseVisualStyleBackColor = true;
-            // 
-            // techcheck
-            // 
-            this.techcheck.AutoSize = true;
-            this.techcheck.Location = new System.Drawing.Point(126, 342);
-            this.techcheck.Name = "techcheck";
-            this.techcheck.Size = new System.Drawing.Size(120, 20);
-            this.techcheck.TabIndex = 16;
-            this.techcheck.Text = "กบข.สงเคราะห์ครู";
-            this.techcheck.UseVisualStyleBackColor = true;
-            // 
-            // parenttxt
-            // 
-            this.parenttxt.Location = new System.Drawing.Point(126, 189);
-            this.parenttxt.Name = "parenttxt";
-            this.parenttxt.Size = new System.Drawing.Size(93, 23);
-            this.parenttxt.TabIndex = 17;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MintCream;
@@ -405,14 +367,52 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // parenttxt
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(271, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(174, 117);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.parenttxt.Location = new System.Drawing.Point(126, 175);
+            this.parenttxt.Name = "parenttxt";
+            this.parenttxt.Size = new System.Drawing.Size(93, 23);
+            this.parenttxt.TabIndex = 17;
+            // 
+            // techcheck
+            // 
+            this.techcheck.AutoSize = true;
+            this.techcheck.Location = new System.Drawing.Point(126, 334);
+            this.techcheck.Name = "techcheck";
+            this.techcheck.Size = new System.Drawing.Size(120, 20);
+            this.techcheck.TabIndex = 16;
+            this.techcheck.Text = "กบข.สงเคราะห์ครู";
+            this.techcheck.UseVisualStyleBackColor = true;
+            // 
+            // chargcheck
+            // 
+            this.chargcheck.AutoSize = true;
+            this.chargcheck.Location = new System.Drawing.Point(126, 230);
+            this.chargcheck.Name = "chargcheck";
+            this.chargcheck.Size = new System.Drawing.Size(114, 20);
+            this.chargcheck.TabIndex = 15;
+            this.chargcheck.Text = "ประกันชีวิตสะสม";
+            this.chargcheck.UseVisualStyleBackColor = true;
+            // 
+            // parentcheck
+            // 
+            this.parentcheck.AutoSize = true;
+            this.parentcheck.Location = new System.Drawing.Point(126, 149);
+            this.parentcheck.Name = "parentcheck";
+            this.parentcheck.Size = new System.Drawing.Size(93, 20);
+            this.parentcheck.TabIndex = 14;
+            this.parentcheck.Text = "เลี้ยงดูพ่อแม่";
+            this.parentcheck.UseVisualStyleBackColor = true;
+            // 
+            // lblOUT
+            // 
+            this.lblOUT.BackColor = System.Drawing.Color.MintCream;
+            this.lblOUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOUT.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblOUT.Location = new System.Drawing.Point(358, 45);
+            this.lblOUT.Name = "lblOUT";
+            this.lblOUT.Size = new System.Drawing.Size(314, 305);
+            this.lblOUT.TabIndex = 13;
             // 
             // Form1
             // 
@@ -428,10 +428,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

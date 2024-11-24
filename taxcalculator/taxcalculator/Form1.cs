@@ -96,43 +96,50 @@ namespace taxcalculator
             {
                 tax = 0.05;
                 taxtotal = (money - 150000) * tax;
-                MessageBox.Show("tax = 5%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 5%" + "\r\n" + "Total Tax: " 
+                    + taxtotal.ToString("C"));
             }
             else if (money > 300001)
             {
                 tax = 0.10;
                 taxtotal = ((money - 300000) * tax) + 7500;
-                MessageBox.Show("tax = 10%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 10%" + "\r\n" + "Total Tax: " 
+                    +    "" + taxtotal.ToString("C"));
             }
             else if (money > 500001)
             {
                 tax = 0.15;
                 taxtotal = ((money - 500000) * tax) + 27500;
-                MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: " 
+                    + taxtotal.ToString("C"));
             }
             else if (money > 750001)
             {
                 tax = 0.20;
                 taxtotal = ((money - 750000) * tax) + 65000;
-                MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: "
+                    + taxtotal.ToString("C"));
             }
             else if (money > 1000001)
             {
                 tax = 0.25;
                 taxtotal = ((money - 1000000) + tax) + 115000;
-                MessageBox.Show("tax = 25%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 25%" + "\r\n" + "Total Tax: " 
+                    + taxtotal.ToString("C"));
             }
             else if (money > 2000001)
             {
                 tax = 0.30;
                 taxtotal = ((money - 2000000) * tax) + 365000;
-                MessageBox.Show("tax = 30%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 30%" + "\r\n" + "Total Tax: " 
+                    + taxtotal.ToString("C"));
             }
             else if (money > 5000001)
             {
                 tax = 0.35;
                 taxtotal = ((money - 5000000) * tax) + 1265000;
-                MessageBox.Show("tax = 35%" + "\r\n" + "Total Tax: " + taxtotal.ToString("C"));
+                MessageBox.Show("tax = 35%" + "\r\n" + "Total Tax: "
+                    + taxtotal.ToString("C"));
             }
 
             return taxtotal;
@@ -287,7 +294,7 @@ namespace taxcalculator
             lastlbl.Enabled = true;
             nolbl.Enabled = true;
             datlbl.Enabled = true;
-
+            
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
