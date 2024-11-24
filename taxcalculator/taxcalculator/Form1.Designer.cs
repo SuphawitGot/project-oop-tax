@@ -88,7 +88,7 @@
             this.btnRun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRun.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRun.Location = new System.Drawing.Point(436, 376);
+            this.btnRun.Location = new System.Drawing.Point(433, 377);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(137, 54);
             this.btnRun.TabIndex = 2;
@@ -104,13 +104,13 @@
             this.Childcheck.Name = "Childcheck";
             this.Childcheck.Size = new System.Drawing.Size(224, 20);
             this.Childcheck.TabIndex = 3;
-            this.Childcheck.Text = "ลดหย่อนบุตร(พร้แมกรอกจำนวนบุตร)";
+            this.Childcheck.Text = "ลดหย่อนบุตร(พร้อมกรอกจำนวนบุตร)";
             this.Childcheck.UseVisualStyleBackColor = true;
             this.Childcheck.CheckedChanged += new System.EventHandler(this.Childcheck_CheckedChanged);
             // 
             // txtChildnum
             // 
-            this.txtChildnum.Location = new System.Drawing.Point(130, 105);
+            this.txtChildnum.Location = new System.Drawing.Point(130, 108);
             this.txtChildnum.Name = "txtChildnum";
             this.txtChildnum.Size = new System.Drawing.Size(128, 23);
             this.txtChildnum.TabIndex = 4;
@@ -226,6 +226,7 @@
             this.datetxt.Name = "datetxt";
             this.datetxt.Size = new System.Drawing.Size(150, 23);
             this.datetxt.TabIndex = 10;
+            this.datetxt.Text = "00/00/00";
             // 
             // Notxt
             // 
