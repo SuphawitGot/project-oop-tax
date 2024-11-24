@@ -18,6 +18,8 @@ namespace taxcalculator
             InitializeComponent();
            
         }
+
+        info objinfo;
         double yearpaid ; // รายได้รายปี
         double deduction =0; // ค่าลดหย่อน
         int Childnum; // จำนวนบุตร
@@ -199,7 +201,33 @@ namespace taxcalculator
 
             return tax1;
         }
+        private void ShowProperty(info oc)
+        {
+            string StrOut = " ";
+            StrOut = "เลขบัตรประชาชน " + oc.idnum + "\r\n";
+            StrOut = "ชื่อ " + oc.Name + "\r\n";
+            StrOut = "นามสกุล " + oc.Surname + "\r\n";
+            StrOut = "เบอร์โทร " + oc.Callnum + "\r\n";
+            StrOut = "วัน/เดือน/ปีเกิด " +oc.Birthdate + "\r\n";
+            lblOUT.Text = StrOut;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            objinfo = new info();
+            ShowProperty(objinfo);
+            btnOBJ.Enabled = false;
+
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            objinfo.idnum = Numbertxt.Text;
+            objinfo.Name = Nametxt.Text;
+            objinfo.Surname = Lastnametxt.Text;
+            objinfo.Callnum = Notxt.Text;
+            objinfo.Birthdate = datetxt.Text; 
+            ShowProperty(objinfo);
+        }
     }
 }
-
 

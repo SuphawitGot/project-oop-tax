@@ -41,20 +41,20 @@
             this.rmfsffcheck = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Numbertxt = new System.Windows.Forms.TextBox();
-            this.Nametxt = new System.Windows.Forms.TextBox();
-            this.Lastnametxt = new System.Windows.Forms.TextBox();
-            this.Notxt = new System.Windows.Forms.TextBox();
+            this.btnOBJ = new System.Windows.Forms.Button();
             this.datetxt = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Notxt = new System.Windows.Forms.TextBox();
+            this.Lastnametxt = new System.Windows.Forms.TextBox();
+            this.Nametxt = new System.Windows.Forms.TextBox();
+            this.Numbertxt = new System.Windows.Forms.TextBox();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblOUT = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -181,13 +181,13 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btnOBJ);
             this.tabPage1.Controls.Add(this.datetxt);
             this.tabPage1.Controls.Add(this.Notxt);
             this.tabPage1.Controls.Add(this.Lastnametxt);
             this.tabPage1.Controls.Add(this.Nametxt);
             this.tabPage1.Controls.Add(this.Numbertxt);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.btnConfirm);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
@@ -201,9 +201,109 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnOBJ
+            // 
+            this.btnOBJ.Location = new System.Drawing.Point(173, 344);
+            this.btnOBJ.Name = "btnOBJ";
+            this.btnOBJ.Size = new System.Drawing.Size(130, 32);
+            this.btnOBJ.TabIndex = 11;
+            this.btnOBJ.Text = "ต้องการกรอกข้อมูล";
+            this.btnOBJ.UseVisualStyleBackColor = true;
+            this.btnOBJ.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // datetxt
+            // 
+            this.datetxt.Location = new System.Drawing.Point(281, 288);
+            this.datetxt.Name = "datetxt";
+            this.datetxt.Size = new System.Drawing.Size(150, 20);
+            this.datetxt.TabIndex = 10;
+            // 
+            // Notxt
+            // 
+            this.Notxt.Location = new System.Drawing.Point(281, 245);
+            this.Notxt.Name = "Notxt";
+            this.Notxt.Size = new System.Drawing.Size(150, 20);
+            this.Notxt.TabIndex = 9;
+            // 
+            // Lastnametxt
+            // 
+            this.Lastnametxt.Location = new System.Drawing.Point(281, 193);
+            this.Lastnametxt.Name = "Lastnametxt";
+            this.Lastnametxt.Size = new System.Drawing.Size(150, 20);
+            this.Lastnametxt.TabIndex = 8;
+            // 
+            // Nametxt
+            // 
+            this.Nametxt.Location = new System.Drawing.Point(281, 135);
+            this.Nametxt.Name = "Nametxt";
+            this.Nametxt.Size = new System.Drawing.Size(150, 20);
+            this.Nametxt.TabIndex = 7;
+            // 
+            // Numbertxt
+            // 
+            this.Numbertxt.Location = new System.Drawing.Point(281, 87);
+            this.Numbertxt.Name = "Numbertxt";
+            this.Numbertxt.Size = new System.Drawing.Size(150, 20);
+            this.Numbertxt.TabIndex = 6;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.Location = new System.Drawing.Point(340, 344);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(135, 32);
+            this.btnConfirm.TabIndex = 5;
+            this.btnConfirm.Text = "ยืนยันข้อมูล";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(186, 291);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "วันเดือนปีเกิด";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(183, 245);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "เบอร์โทร";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(186, 193);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "นามสกุล";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(186, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ชื่อ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(186, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "เลขบัตรประชาชน";
+            // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.lblOUT);
             this.tabPage2.Controls.Add(this.checkSecurity);
             this.tabPage2.Controls.Add(this.btnRun);
             this.tabPage2.Controls.Add(this.Childcheck);
@@ -223,112 +323,13 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblOUT
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(186, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "เลขบัตรประชาชน";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ชื่อ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(186, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "นามสกุล";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(183, 245);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "เบอร์โทร";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(186, 291);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "วันเดือนปีเกิด";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(340, 344);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "ยืนยันข้อมูล";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // Numbertxt
-            // 
-            this.Numbertxt.Location = new System.Drawing.Point(281, 87);
-            this.Numbertxt.Name = "Numbertxt";
-            this.Numbertxt.Size = new System.Drawing.Size(150, 20);
-            this.Numbertxt.TabIndex = 6;
-            // 
-            // Nametxt
-            // 
-            this.Nametxt.Location = new System.Drawing.Point(281, 135);
-            this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(150, 20);
-            this.Nametxt.TabIndex = 7;
-            // 
-            // Lastnametxt
-            // 
-            this.Lastnametxt.Location = new System.Drawing.Point(281, 193);
-            this.Lastnametxt.Name = "Lastnametxt";
-            this.Lastnametxt.Size = new System.Drawing.Size(150, 20);
-            this.Lastnametxt.TabIndex = 8;
-            // 
-            // Notxt
-            // 
-            this.Notxt.Location = new System.Drawing.Point(281, 245);
-            this.Notxt.Name = "Notxt";
-            this.Notxt.Size = new System.Drawing.Size(150, 20);
-            this.Notxt.TabIndex = 9;
-            // 
-            // datetxt
-            // 
-            this.datetxt.Location = new System.Drawing.Point(281, 288);
-            this.datetxt.Name = "datetxt";
-            this.datetxt.Size = new System.Drawing.Size(150, 20);
-            this.datetxt.TabIndex = 10;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(173, 344);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 32);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "ต้องการกรอกข้อมูล";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(335, 40);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 246);
-            this.textBox1.TabIndex = 13;
+            this.lblOUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOUT.Location = new System.Drawing.Point(347, 45);
+            this.lblOUT.Name = "lblOUT";
+            this.lblOUT.Size = new System.Drawing.Size(273, 272);
+            this.lblOUT.TabIndex = 13;
             // 
             // Form1
             // 
@@ -371,14 +372,14 @@
         private System.Windows.Forms.TextBox Lastnametxt;
         private System.Windows.Forms.TextBox Nametxt;
         private System.Windows.Forms.TextBox Numbertxt;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnOBJ;
+        private System.Windows.Forms.Label lblOUT;
     }
 }
 
