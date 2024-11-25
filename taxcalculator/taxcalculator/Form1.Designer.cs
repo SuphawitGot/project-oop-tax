@@ -62,11 +62,14 @@
             this.parentcheck = new System.Windows.Forms.CheckBox();
             this.lblOUT = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtINCOME = new System.Windows.Forms.TextBox();
+            this.lblINCOME = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtYearpaid
@@ -362,12 +365,13 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBox1.Location = new System.Drawing.Point(563, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(412, 216);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // parenttxt
             // 
@@ -410,7 +414,7 @@
             // 
             this.lblOUT.BackColor = System.Drawing.Color.MintCream;
             this.lblOUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOUT.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblOUT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOUT.Location = new System.Drawing.Point(358, 45);
             this.lblOUT.Name = "lblOUT";
             this.lblOUT.Size = new System.Drawing.Size(314, 305);
@@ -418,6 +422,8 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.lblINCOME);
+            this.tabPage3.Controls.Add(this.txtINCOME);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -425,6 +431,22 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ภาษีนิติบุคคล";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // txtINCOME
+            // 
+            this.txtINCOME.Location = new System.Drawing.Point(142, 45);
+            this.txtINCOME.Name = "txtINCOME";
+            this.txtINCOME.Size = new System.Drawing.Size(136, 23);
+            this.txtINCOME.TabIndex = 1;
+            // 
+            // lblINCOME
+            // 
+            this.lblINCOME.AutoSize = true;
+            this.lblINCOME.Location = new System.Drawing.Point(59, 48);
+            this.lblINCOME.Name = "lblINCOME";
+            this.lblINCOME.Size = new System.Drawing.Size(41, 16);
+            this.lblINCOME.TabIndex = 2;
+            this.lblINCOME.Text = "label1";
             // 
             // Form1
             // 
@@ -444,6 +466,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -484,6 +508,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label lblINCOME;
+        private System.Windows.Forms.TextBox txtINCOME;
     }
 }
 

@@ -83,6 +83,8 @@ namespace taxcalculator
             txtChildnum.Enabled = true; 
            
         }
+        
+         //สร้าง method ไว้คำนวณภาษี
          public double Taxcalculated() 
          {
 
@@ -271,7 +273,7 @@ namespace taxcalculator
             }
         }
 
-       //สร้าง method ไว้คำนวณภาษี
+       
        
         private void ShowProperty(info oc)
         {
@@ -326,6 +328,11 @@ namespace taxcalculator
 
             pictureBox1.ImageLocation
                 =Application.StartupPath + "\\Cow.jpg ";
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
