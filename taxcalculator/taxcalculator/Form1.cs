@@ -88,6 +88,7 @@ namespace taxcalculator
 
             double taxtotal=0; // ภาษีที่ต้องจ่าย
             double tax=0; // ภาษี
+            
             if (money < 150000) // ถ้าเงินสุทธิไม่ถึง150,000ไม่ต้องจ่ายภาษี
             {
                 MessageBox.Show("ไม่ต้องจ่ายภาษี");
@@ -151,6 +152,7 @@ namespace taxcalculator
             {
                 // กำหนดค่าเริ่มต้นสำหรับค่าลดหย่อน
                 deduction = 0;
+                double persent=0;
 
                 // ตรวจสอบว่าผู้ใช้กรอกข้อมูลรายได้รายปีหรือยัง
                 if (string.IsNullOrEmpty(txtYearpaid.Text) || !double.TryParse(txtYearpaid.Text, out yearpaid))
@@ -241,13 +243,18 @@ namespace taxcalculator
                 // คำนวณเงินสุทธิ (รายได้ - ค่าลดหย่อน)
                 money = yearpaid - deduction;
 
+               // persent = taxtotal / money;
+
 
                 double taxtotal = Taxcalculated();
+                
                 // แสดงผลลัพธ์  
                 MessageBox.Show($"รายได้รายปี: {yearpaid:C}\r\n" +
                         $"ค่าลดหย่อนรวม: {deduction:C}\r\n" +
                         $"เงินสุทธิ: {money:C}\r\n" +
-                        $"ภาษีที่ต้องชำระ: {taxtotal:C}",
+                        $"ภาษีที่ต้องชำระ: {taxtotal:C}\r\n"
+                       // $"ภาษีคิดเป็น:{:C}"
+                        ,
                         "ผลการคำนวณ", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 

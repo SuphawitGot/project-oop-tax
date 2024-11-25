@@ -61,6 +61,7 @@
             this.chargcheck = new System.Windows.Forms.CheckBox();
             this.parentcheck = new System.Windows.Forms.CheckBox();
             this.lblOUT = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -189,6 +190,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tabControl1.Location = new System.Drawing.Point(-4, -2);
             this.tabControl1.Name = "tabControl1";
@@ -360,7 +362,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBox1.Location = new System.Drawing.Point(554, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(563, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -413,6 +415,16 @@
             this.lblOUT.Name = "lblOUT";
             this.lblOUT.Size = new System.Drawing.Size(314, 305);
             this.lblOUT.TabIndex = 13;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(686, 486);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "ภาษีนิติบุคคล";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -471,6 +483,7 @@
         private System.Windows.Forms.TextBox parenttxt;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
