@@ -55,21 +55,77 @@
             this.namlbl = new System.Windows.Forms.Label();
             this.numlbl = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picRSU = new System.Windows.Forms.PictureBox();
             this.parenttxt = new System.Windows.Forms.TextBox();
             this.techcheck = new System.Windows.Forms.CheckBox();
             this.chargcheck = new System.Windows.Forms.CheckBox();
             this.parentcheck = new System.Windows.Forms.CheckBox();
             this.lblOUT = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.txtINCOME = new System.Windows.Forms.TextBox();
+            this.btnNITI = new System.Windows.Forms.Button();
+            this.Checkbusiness = new System.Windows.Forms.CheckBox();
+            this.SMEcheck = new System.Windows.Forms.CheckBox();
+            this.lblniti = new System.Windows.Forms.Label();
             this.lblINCOME = new System.Windows.Forms.Label();
+            this.txtINCOME = new System.Windows.Forms.TextBox();
+            this.txtOUTCOME = new System.Windows.Forms.TextBox();
+            this.lblOUTCOME = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.checkNV = new System.Windows.Forms.CheckBox();
+            this.checkTESLA = new System.Windows.Forms.CheckBox();
+            this.lblNV = new System.Windows.Forms.Label();
+            this.lblTesla = new System.Windows.Forms.Label();
+            this.checkMicrosoft = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkApple = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkCocaCola = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtprinciple = new System.Windows.Forms.TextBox();
+            this.lblprinciple = new System.Windows.Forms.Label();
+            this.check1yearNV = new System.Windows.Forms.CheckBox();
+            this.check3yearNV = new System.Windows.Forms.CheckBox();
+            this.check5yearNV = new System.Windows.Forms.CheckBox();
+            this.check10yearNV = new System.Windows.Forms.CheckBox();
+            this.check10yearTesla = new System.Windows.Forms.CheckBox();
+            this.check5yearTesla = new System.Windows.Forms.CheckBox();
+            this.check3yearTesla = new System.Windows.Forms.CheckBox();
+            this.check1yearTesla = new System.Windows.Forms.CheckBox();
+            this.check10MC = new System.Windows.Forms.CheckBox();
+            this.check5MC = new System.Windows.Forms.CheckBox();
+            this.check3MC = new System.Windows.Forms.CheckBox();
+            this.check1MC = new System.Windows.Forms.CheckBox();
+            this.check10Apple = new System.Windows.Forms.CheckBox();
+            this.check5Apple = new System.Windows.Forms.CheckBox();
+            this.check3Apple = new System.Windows.Forms.CheckBox();
+            this.check1Apple = new System.Windows.Forms.CheckBox();
+            this.check10Coke = new System.Windows.Forms.CheckBox();
+            this.check5Coke = new System.Windows.Forms.CheckBox();
+            this.check3Coke = new System.Windows.Forms.CheckBox();
+            this.check1Coke = new System.Windows.Forms.CheckBox();
+            this.picNV = new System.Windows.Forms.PictureBox();
+            this.picTesla = new System.Windows.Forms.PictureBox();
+            this.picMC = new System.Windows.Forms.PictureBox();
+            this.picApple = new System.Windows.Forms.PictureBox();
+            this.picCoke = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRSU)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTesla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picApple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCoke)).BeginInit();
             this.SuspendLayout();
             // 
             // txtYearpaid
@@ -194,6 +250,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tabControl1.Location = new System.Drawing.Point(-4, -2);
             this.tabControl1.Name = "tabControl1";
@@ -226,12 +283,13 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(281, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(283, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(174, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnOBJ
             // 
@@ -338,7 +396,7 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage2.Controls.Add(this.pictureBox1);
+            this.tabPage2.Controls.Add(this.picRSU);
             this.tabPage2.Controls.Add(this.parenttxt);
             this.tabPage2.Controls.Add(this.techcheck);
             this.tabPage2.Controls.Add(this.chargcheck);
@@ -362,16 +420,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "คำนวณภาษี";
             // 
-            // pictureBox1
+            // picRSU
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBox1.Location = new System.Drawing.Point(412, 216);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picRSU.BackColor = System.Drawing.Color.MintCream;
+            this.picRSU.Location = new System.Drawing.Point(367, 171);
+            this.picRSU.Name = "picRSU";
+            this.picRSU.Size = new System.Drawing.Size(296, 157);
+            this.picRSU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picRSU.TabIndex = 18;
+            this.picRSU.TabStop = false;
+            this.picRSU.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // parenttxt
             // 
@@ -422,6 +480,13 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tabPage3.Controls.Add(this.lblOUTCOME);
+            this.tabPage3.Controls.Add(this.txtOUTCOME);
+            this.tabPage3.Controls.Add(this.btnNITI);
+            this.tabPage3.Controls.Add(this.Checkbusiness);
+            this.tabPage3.Controls.Add(this.SMEcheck);
+            this.tabPage3.Controls.Add(this.lblniti);
             this.tabPage3.Controls.Add(this.lblINCOME);
             this.tabPage3.Controls.Add(this.txtINCOME);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -430,23 +495,574 @@
             this.tabPage3.Size = new System.Drawing.Size(686, 486);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ภาษีนิติบุคคล";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // txtINCOME
+            // btnNITI
             // 
-            this.txtINCOME.Location = new System.Drawing.Point(142, 45);
-            this.txtINCOME.Name = "txtINCOME";
-            this.txtINCOME.Size = new System.Drawing.Size(136, 23);
-            this.txtINCOME.TabIndex = 1;
+            this.btnNITI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnNITI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnNITI.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnNITI.FlatAppearance.BorderSize = 0;
+            this.btnNITI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnNITI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btnNITI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNITI.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNITI.Location = new System.Drawing.Point(260, 321);
+            this.btnNITI.Name = "btnNITI";
+            this.btnNITI.Size = new System.Drawing.Size(137, 54);
+            this.btnNITI.TabIndex = 6;
+            this.btnNITI.Text = "คำนวณภาษี";
+            this.btnNITI.UseVisualStyleBackColor = false;
+            this.btnNITI.Click += new System.EventHandler(this.btnNITI_Click);
+            // 
+            // Checkbusiness
+            // 
+            this.Checkbusiness.AutoSize = true;
+            this.Checkbusiness.Location = new System.Drawing.Point(402, 229);
+            this.Checkbusiness.Name = "Checkbusiness";
+            this.Checkbusiness.Size = new System.Drawing.Size(84, 20);
+            this.Checkbusiness.TabIndex = 5;
+            this.Checkbusiness.Text = "ธุรกิจทั่วไป";
+            this.Checkbusiness.UseVisualStyleBackColor = true;
+            // 
+            // SMEcheck
+            // 
+            this.SMEcheck.AutoSize = true;
+            this.SMEcheck.Location = new System.Drawing.Point(164, 229);
+            this.SMEcheck.Name = "SMEcheck";
+            this.SMEcheck.Size = new System.Drawing.Size(79, 20);
+            this.SMEcheck.TabIndex = 4;
+            this.SMEcheck.Text = "ธุรกิจSME";
+            this.SMEcheck.UseVisualStyleBackColor = true;
+            // 
+            // lblniti
+            // 
+            this.lblniti.AutoSize = true;
+            this.lblniti.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblniti.Location = new System.Drawing.Point(257, 18);
+            this.lblniti.Name = "lblniti";
+            this.lblniti.Size = new System.Drawing.Size(123, 23);
+            this.lblniti.TabIndex = 3;
+            this.lblniti.Text = "ภาษีนิติบุคคล";
             // 
             // lblINCOME
             // 
             this.lblINCOME.AutoSize = true;
-            this.lblINCOME.Location = new System.Drawing.Point(59, 48);
+            this.lblINCOME.Location = new System.Drawing.Point(133, 88);
             this.lblINCOME.Name = "lblINCOME";
-            this.lblINCOME.Size = new System.Drawing.Size(41, 16);
+            this.lblINCOME.Size = new System.Drawing.Size(96, 16);
             this.lblINCOME.TabIndex = 2;
-            this.lblINCOME.Text = "label1";
+            this.lblINCOME.Text = "กรอกรายได้ต่อปี";
+            // 
+            // txtINCOME
+            // 
+            this.txtINCOME.Location = new System.Drawing.Point(261, 85);
+            this.txtINCOME.Name = "txtINCOME";
+            this.txtINCOME.Size = new System.Drawing.Size(136, 23);
+            this.txtINCOME.TabIndex = 1;
+            this.txtINCOME.TextChanged += new System.EventHandler(this.txtINCOME_TextChanged);
+            // 
+            // txtOUTCOME
+            // 
+            this.txtOUTCOME.Location = new System.Drawing.Point(260, 140);
+            this.txtOUTCOME.Name = "txtOUTCOME";
+            this.txtOUTCOME.Size = new System.Drawing.Size(136, 23);
+            this.txtOUTCOME.TabIndex = 7;
+            // 
+            // lblOUTCOME
+            // 
+            this.lblOUTCOME.AutoSize = true;
+            this.lblOUTCOME.Location = new System.Drawing.Point(133, 143);
+            this.lblOUTCOME.Name = "lblOUTCOME";
+            this.lblOUTCOME.Size = new System.Drawing.Size(102, 16);
+            this.lblOUTCOME.TabIndex = 8;
+            this.lblOUTCOME.Text = "กรอกรายจ่ายต่อปี";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tabPage4.Controls.Add(this.picCoke);
+            this.tabPage4.Controls.Add(this.picApple);
+            this.tabPage4.Controls.Add(this.picMC);
+            this.tabPage4.Controls.Add(this.picTesla);
+            this.tabPage4.Controls.Add(this.picNV);
+            this.tabPage4.Controls.Add(this.check10Coke);
+            this.tabPage4.Controls.Add(this.check5Coke);
+            this.tabPage4.Controls.Add(this.check3Coke);
+            this.tabPage4.Controls.Add(this.check1Coke);
+            this.tabPage4.Controls.Add(this.check10Apple);
+            this.tabPage4.Controls.Add(this.check5Apple);
+            this.tabPage4.Controls.Add(this.check3Apple);
+            this.tabPage4.Controls.Add(this.check1Apple);
+            this.tabPage4.Controls.Add(this.check10MC);
+            this.tabPage4.Controls.Add(this.check5MC);
+            this.tabPage4.Controls.Add(this.check3MC);
+            this.tabPage4.Controls.Add(this.check1MC);
+            this.tabPage4.Controls.Add(this.check10yearTesla);
+            this.tabPage4.Controls.Add(this.check5yearTesla);
+            this.tabPage4.Controls.Add(this.check3yearTesla);
+            this.tabPage4.Controls.Add(this.check1yearTesla);
+            this.tabPage4.Controls.Add(this.check10yearNV);
+            this.tabPage4.Controls.Add(this.check5yearNV);
+            this.tabPage4.Controls.Add(this.check3yearNV);
+            this.tabPage4.Controls.Add(this.check1yearNV);
+            this.tabPage4.Controls.Add(this.lblprinciple);
+            this.tabPage4.Controls.Add(this.txtprinciple);
+            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.checkCocaCola);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.checkApple);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.checkMicrosoft);
+            this.tabPage4.Controls.Add(this.lblTesla);
+            this.tabPage4.Controls.Add(this.lblNV);
+            this.tabPage4.Controls.Add(this.checkTESLA);
+            this.tabPage4.Controls.Add(this.checkNV);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(686, 486);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "แนะนำการลงทุน";
+            // 
+            // checkNV
+            // 
+            this.checkNV.AutoSize = true;
+            this.checkNV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.checkNV.Location = new System.Drawing.Point(153, 69);
+            this.checkNV.Name = "checkNV";
+            this.checkNV.Size = new System.Drawing.Size(68, 23);
+            this.checkNV.TabIndex = 1;
+            this.checkNV.Text = "Nvdia";
+            this.checkNV.UseVisualStyleBackColor = true;
+            // 
+            // checkTESLA
+            // 
+            this.checkTESLA.AutoSize = true;
+            this.checkTESLA.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.checkTESLA.Location = new System.Drawing.Point(153, 144);
+            this.checkTESLA.Name = "checkTESLA";
+            this.checkTESLA.Size = new System.Drawing.Size(65, 23);
+            this.checkTESLA.TabIndex = 2;
+            this.checkTESLA.Text = "Tesla";
+            this.checkTESLA.UseVisualStyleBackColor = true;
+            // 
+            // lblNV
+            // 
+            this.lblNV.AutoSize = true;
+            this.lblNV.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblNV.Location = new System.Drawing.Point(141, 95);
+            this.lblNV.Name = "lblNV";
+            this.lblNV.Size = new System.Drawing.Size(113, 18);
+            this.lblNV.TabIndex = 4;
+            this.lblNV.Text = "ระยะเวลาที่ถือหุ้น";
+            // 
+            // lblTesla
+            // 
+            this.lblTesla.AutoSize = true;
+            this.lblTesla.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblTesla.Location = new System.Drawing.Point(141, 170);
+            this.lblTesla.Name = "lblTesla";
+            this.lblTesla.Size = new System.Drawing.Size(113, 18);
+            this.lblTesla.TabIndex = 5;
+            this.lblTesla.Text = "ระยะเวลาที่ถือหุ้น";
+            // 
+            // checkMicrosoft
+            // 
+            this.checkMicrosoft.AutoSize = true;
+            this.checkMicrosoft.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.checkMicrosoft.Location = new System.Drawing.Point(153, 216);
+            this.checkMicrosoft.Name = "checkMicrosoft";
+            this.checkMicrosoft.Size = new System.Drawing.Size(92, 23);
+            this.checkMicrosoft.TabIndex = 7;
+            this.checkMicrosoft.Text = "Microsoft";
+            this.checkMicrosoft.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Location = new System.Drawing.Point(141, 242);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 18);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "ระยะเวลาที่ถือหุ้น";
+            // 
+            // checkApple
+            // 
+            this.checkApple.AutoSize = true;
+            this.checkApple.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.checkApple.Location = new System.Drawing.Point(152, 302);
+            this.checkApple.Name = "checkApple";
+            this.checkApple.Size = new System.Drawing.Size(69, 23);
+            this.checkApple.TabIndex = 10;
+            this.checkApple.Text = "Apple";
+            this.checkApple.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label2.Location = new System.Drawing.Point(140, 328);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 18);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "ระยะเวลาที่ถือหุ้น";
+            // 
+            // checkCocaCola
+            // 
+            this.checkCocaCola.AutoSize = true;
+            this.checkCocaCola.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.checkCocaCola.Location = new System.Drawing.Point(153, 379);
+            this.checkCocaCola.Name = "checkCocaCola";
+            this.checkCocaCola.Size = new System.Drawing.Size(63, 23);
+            this.checkCocaCola.TabIndex = 13;
+            this.checkCocaCola.Text = "Coke";
+            this.checkCocaCola.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label3.Location = new System.Drawing.Point(141, 405);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 18);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "ระยะเวลาที่ถือหุ้น";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Location = new System.Drawing.Point(438, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 18);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "ปี";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label5.Location = new System.Drawing.Point(438, 170);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 18);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "ปี";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label6.Location = new System.Drawing.Point(438, 244);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 18);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "ปี";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label7.Location = new System.Drawing.Point(437, 328);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(17, 18);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "ปี";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label8.Location = new System.Drawing.Point(438, 405);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 18);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "ปี";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(512, 225);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 54);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "คำนวณ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtprinciple
+            // 
+            this.txtprinciple.Location = new System.Drawing.Point(298, 30);
+            this.txtprinciple.Name = "txtprinciple";
+            this.txtprinciple.Size = new System.Drawing.Size(100, 23);
+            this.txtprinciple.TabIndex = 19;
+            // 
+            // lblprinciple
+            // 
+            this.lblprinciple.AutoSize = true;
+            this.lblprinciple.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblprinciple.Location = new System.Drawing.Point(173, 31);
+            this.lblprinciple.Name = "lblprinciple";
+            this.lblprinciple.Size = new System.Drawing.Size(123, 18);
+            this.lblprinciple.TabIndex = 20;
+            this.lblprinciple.Text = "เงินที่ต้องการลงทุน";
+            // 
+            // check1yearNV
+            // 
+            this.check1yearNV.AutoSize = true;
+            this.check1yearNV.Location = new System.Drawing.Point(260, 94);
+            this.check1yearNV.Name = "check1yearNV";
+            this.check1yearNV.Size = new System.Drawing.Size(33, 20);
+            this.check1yearNV.TabIndex = 21;
+            this.check1yearNV.Text = "1";
+            this.check1yearNV.UseVisualStyleBackColor = true;
+            // 
+            // check3yearNV
+            // 
+            this.check3yearNV.AutoSize = true;
+            this.check3yearNV.Location = new System.Drawing.Point(299, 94);
+            this.check3yearNV.Name = "check3yearNV";
+            this.check3yearNV.Size = new System.Drawing.Size(33, 20);
+            this.check3yearNV.TabIndex = 22;
+            this.check3yearNV.Text = "3";
+            this.check3yearNV.UseVisualStyleBackColor = true;
+            // 
+            // check5yearNV
+            // 
+            this.check5yearNV.AutoSize = true;
+            this.check5yearNV.Location = new System.Drawing.Point(338, 94);
+            this.check5yearNV.Name = "check5yearNV";
+            this.check5yearNV.Size = new System.Drawing.Size(33, 20);
+            this.check5yearNV.TabIndex = 23;
+            this.check5yearNV.Text = "5";
+            this.check5yearNV.UseVisualStyleBackColor = true;
+            // 
+            // check10yearNV
+            // 
+            this.check10yearNV.AutoSize = true;
+            this.check10yearNV.Location = new System.Drawing.Point(376, 94);
+            this.check10yearNV.Name = "check10yearNV";
+            this.check10yearNV.Size = new System.Drawing.Size(40, 20);
+            this.check10yearNV.TabIndex = 23;
+            this.check10yearNV.Text = "10";
+            this.check10yearNV.UseVisualStyleBackColor = true;
+            // 
+            // check10yearTesla
+            // 
+            this.check10yearTesla.AutoSize = true;
+            this.check10yearTesla.Location = new System.Drawing.Point(376, 171);
+            this.check10yearTesla.Name = "check10yearTesla";
+            this.check10yearTesla.Size = new System.Drawing.Size(40, 20);
+            this.check10yearTesla.TabIndex = 26;
+            this.check10yearTesla.Text = "10";
+            this.check10yearTesla.UseVisualStyleBackColor = true;
+            // 
+            // check5yearTesla
+            // 
+            this.check5yearTesla.AutoSize = true;
+            this.check5yearTesla.Location = new System.Drawing.Point(337, 171);
+            this.check5yearTesla.Name = "check5yearTesla";
+            this.check5yearTesla.Size = new System.Drawing.Size(33, 20);
+            this.check5yearTesla.TabIndex = 27;
+            this.check5yearTesla.Text = "5";
+            this.check5yearTesla.UseVisualStyleBackColor = true;
+            // 
+            // check3yearTesla
+            // 
+            this.check3yearTesla.AutoSize = true;
+            this.check3yearTesla.Location = new System.Drawing.Point(299, 171);
+            this.check3yearTesla.Name = "check3yearTesla";
+            this.check3yearTesla.Size = new System.Drawing.Size(33, 20);
+            this.check3yearTesla.TabIndex = 25;
+            this.check3yearTesla.Text = "3";
+            this.check3yearTesla.UseVisualStyleBackColor = true;
+            // 
+            // check1yearTesla
+            // 
+            this.check1yearTesla.AutoSize = true;
+            this.check1yearTesla.Location = new System.Drawing.Point(260, 171);
+            this.check1yearTesla.Name = "check1yearTesla";
+            this.check1yearTesla.Size = new System.Drawing.Size(33, 20);
+            this.check1yearTesla.TabIndex = 24;
+            this.check1yearTesla.Text = "1";
+            this.check1yearTesla.UseVisualStyleBackColor = true;
+            // 
+            // check10MC
+            // 
+            this.check10MC.AutoSize = true;
+            this.check10MC.Location = new System.Drawing.Point(376, 243);
+            this.check10MC.Name = "check10MC";
+            this.check10MC.Size = new System.Drawing.Size(40, 20);
+            this.check10MC.TabIndex = 30;
+            this.check10MC.Text = "10";
+            this.check10MC.UseVisualStyleBackColor = true;
+            // 
+            // check5MC
+            // 
+            this.check5MC.AutoSize = true;
+            this.check5MC.Location = new System.Drawing.Point(338, 243);
+            this.check5MC.Name = "check5MC";
+            this.check5MC.Size = new System.Drawing.Size(33, 20);
+            this.check5MC.TabIndex = 31;
+            this.check5MC.Text = "5";
+            this.check5MC.UseVisualStyleBackColor = true;
+            // 
+            // check3MC
+            // 
+            this.check3MC.AutoSize = true;
+            this.check3MC.Location = new System.Drawing.Point(299, 242);
+            this.check3MC.Name = "check3MC";
+            this.check3MC.Size = new System.Drawing.Size(33, 20);
+            this.check3MC.TabIndex = 29;
+            this.check3MC.Text = "3";
+            this.check3MC.UseVisualStyleBackColor = true;
+            // 
+            // check1MC
+            // 
+            this.check1MC.AutoSize = true;
+            this.check1MC.Location = new System.Drawing.Point(260, 243);
+            this.check1MC.Name = "check1MC";
+            this.check1MC.Size = new System.Drawing.Size(33, 20);
+            this.check1MC.TabIndex = 28;
+            this.check1MC.Text = "1";
+            this.check1MC.UseVisualStyleBackColor = true;
+            // 
+            // check10Apple
+            // 
+            this.check10Apple.AutoSize = true;
+            this.check10Apple.Location = new System.Drawing.Point(375, 326);
+            this.check10Apple.Name = "check10Apple";
+            this.check10Apple.Size = new System.Drawing.Size(40, 20);
+            this.check10Apple.TabIndex = 34;
+            this.check10Apple.Text = "10";
+            this.check10Apple.UseVisualStyleBackColor = true;
+            // 
+            // check5Apple
+            // 
+            this.check5Apple.AutoSize = true;
+            this.check5Apple.Location = new System.Drawing.Point(337, 326);
+            this.check5Apple.Name = "check5Apple";
+            this.check5Apple.Size = new System.Drawing.Size(33, 20);
+            this.check5Apple.TabIndex = 35;
+            this.check5Apple.Text = "5";
+            this.check5Apple.UseVisualStyleBackColor = true;
+            // 
+            // check3Apple
+            // 
+            this.check3Apple.AutoSize = true;
+            this.check3Apple.Location = new System.Drawing.Point(298, 325);
+            this.check3Apple.Name = "check3Apple";
+            this.check3Apple.Size = new System.Drawing.Size(33, 20);
+            this.check3Apple.TabIndex = 33;
+            this.check3Apple.Text = "3";
+            this.check3Apple.UseVisualStyleBackColor = true;
+            // 
+            // check1Apple
+            // 
+            this.check1Apple.AutoSize = true;
+            this.check1Apple.Location = new System.Drawing.Point(259, 326);
+            this.check1Apple.Name = "check1Apple";
+            this.check1Apple.Size = new System.Drawing.Size(33, 20);
+            this.check1Apple.TabIndex = 32;
+            this.check1Apple.Text = "1";
+            this.check1Apple.UseVisualStyleBackColor = true;
+            // 
+            // check10Coke
+            // 
+            this.check10Coke.AutoSize = true;
+            this.check10Coke.Location = new System.Drawing.Point(376, 404);
+            this.check10Coke.Name = "check10Coke";
+            this.check10Coke.Size = new System.Drawing.Size(40, 20);
+            this.check10Coke.TabIndex = 38;
+            this.check10Coke.Text = "10";
+            this.check10Coke.UseVisualStyleBackColor = true;
+            // 
+            // check5Coke
+            // 
+            this.check5Coke.AutoSize = true;
+            this.check5Coke.Location = new System.Drawing.Point(338, 404);
+            this.check5Coke.Name = "check5Coke";
+            this.check5Coke.Size = new System.Drawing.Size(33, 20);
+            this.check5Coke.TabIndex = 39;
+            this.check5Coke.Text = "5";
+            this.check5Coke.UseVisualStyleBackColor = true;
+            // 
+            // check3Coke
+            // 
+            this.check3Coke.AutoSize = true;
+            this.check3Coke.Location = new System.Drawing.Point(299, 403);
+            this.check3Coke.Name = "check3Coke";
+            this.check3Coke.Size = new System.Drawing.Size(33, 20);
+            this.check3Coke.TabIndex = 37;
+            this.check3Coke.Text = "3";
+            this.check3Coke.UseVisualStyleBackColor = true;
+            // 
+            // check1Coke
+            // 
+            this.check1Coke.AutoSize = true;
+            this.check1Coke.Location = new System.Drawing.Point(260, 404);
+            this.check1Coke.Name = "check1Coke";
+            this.check1Coke.Size = new System.Drawing.Size(33, 20);
+            this.check1Coke.TabIndex = 36;
+            this.check1Coke.Text = "1";
+            this.check1Coke.UseVisualStyleBackColor = true;
+            // 
+            // picNV
+            // 
+            this.picNV.Location = new System.Drawing.Point(35, 55);
+            this.picNV.Name = "picNV";
+            this.picNV.Size = new System.Drawing.Size(91, 59);
+            this.picNV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNV.TabIndex = 40;
+            this.picNV.TabStop = false;
+            // 
+            // picTesla
+            // 
+            this.picTesla.Location = new System.Drawing.Point(35, 215);
+            this.picTesla.Name = "picTesla";
+            this.picTesla.Size = new System.Drawing.Size(91, 64);
+            this.picTesla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picTesla.TabIndex = 41;
+            this.picTesla.TabStop = false;
+            // 
+            // picMC
+            // 
+            this.picMC.Location = new System.Drawing.Point(35, 131);
+            this.picMC.Name = "picMC";
+            this.picMC.Size = new System.Drawing.Size(91, 60);
+            this.picMC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMC.TabIndex = 42;
+            this.picMC.TabStop = false;
+            // 
+            // picApple
+            // 
+            this.picApple.Location = new System.Drawing.Point(38, 302);
+            this.picApple.Name = "picApple";
+            this.picApple.Size = new System.Drawing.Size(88, 65);
+            this.picApple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picApple.TabIndex = 43;
+            this.picApple.TabStop = false;
+            // 
+            // picCoke
+            // 
+            this.picCoke.Location = new System.Drawing.Point(38, 379);
+            this.picCoke.Name = "picCoke";
+            this.picCoke.Size = new System.Drawing.Size(88, 65);
+            this.picCoke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCoke.TabIndex = 44;
+            this.picCoke.TabStop = false;
             // 
             // Form1
             // 
@@ -465,9 +1081,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRSU)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTesla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picApple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCoke)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -505,11 +1128,61 @@
         private System.Windows.Forms.CheckBox chargcheck;
         private System.Windows.Forms.CheckBox parentcheck;
         private System.Windows.Forms.TextBox parenttxt;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picRSU;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label lblINCOME;
         private System.Windows.Forms.TextBox txtINCOME;
+        private System.Windows.Forms.Label lblniti;
+        private System.Windows.Forms.Button btnNITI;
+        private System.Windows.Forms.CheckBox Checkbusiness;
+        private System.Windows.Forms.CheckBox SMEcheck;
+        private System.Windows.Forms.Label lblOUTCOME;
+        private System.Windows.Forms.TextBox txtOUTCOME;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.CheckBox checkTESLA;
+        private System.Windows.Forms.CheckBox checkNV;
+        private System.Windows.Forms.Label lblNV;
+        private System.Windows.Forms.CheckBox checkApple;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkMicrosoft;
+        private System.Windows.Forms.Label lblTesla;
+        private System.Windows.Forms.CheckBox checkCocaCola;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblprinciple;
+        private System.Windows.Forms.TextBox txtprinciple;
+        private System.Windows.Forms.CheckBox check5yearNV;
+        private System.Windows.Forms.CheckBox check3yearNV;
+        private System.Windows.Forms.CheckBox check1yearNV;
+        private System.Windows.Forms.CheckBox check10Coke;
+        private System.Windows.Forms.CheckBox check5Coke;
+        private System.Windows.Forms.CheckBox check3Coke;
+        private System.Windows.Forms.CheckBox check1Coke;
+        private System.Windows.Forms.CheckBox check10Apple;
+        private System.Windows.Forms.CheckBox check5Apple;
+        private System.Windows.Forms.CheckBox check3Apple;
+        private System.Windows.Forms.CheckBox check1Apple;
+        private System.Windows.Forms.CheckBox check10MC;
+        private System.Windows.Forms.CheckBox check5MC;
+        private System.Windows.Forms.CheckBox check3MC;
+        private System.Windows.Forms.CheckBox check1MC;
+        private System.Windows.Forms.CheckBox check10yearTesla;
+        private System.Windows.Forms.CheckBox check5yearTesla;
+        private System.Windows.Forms.CheckBox check3yearTesla;
+        private System.Windows.Forms.CheckBox check1yearTesla;
+        private System.Windows.Forms.CheckBox check10yearNV;
+        private System.Windows.Forms.PictureBox picCoke;
+        private System.Windows.Forms.PictureBox picApple;
+        private System.Windows.Forms.PictureBox picMC;
+        private System.Windows.Forms.PictureBox picTesla;
+        private System.Windows.Forms.PictureBox picNV;
     }
 }
 
