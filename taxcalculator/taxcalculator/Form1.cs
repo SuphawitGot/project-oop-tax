@@ -317,7 +317,7 @@ namespace taxcalculator
 
         private void ShowProperty(info oc)
         {
-
+            //กำหนดสตริงเพื่อเเสดงข้อมูลที่รับมา
             string StrOut = "";
             StrOut += "เลขบัตรประชาชน        " + oc.idnum + "\r\n";
             StrOut += "ชื่อ       " + oc.Name + "\r\n";
@@ -351,7 +351,7 @@ namespace taxcalculator
 
             lblYear.Enabled = true;
             txtYearpaid.Enabled = true;
-
+            //ดุเงื่อนไขหากไม่มีการใส่ข้อมูลให้ดชว์ข้อควา่ม
             if (objinfo == null)
             {
                 MessageBox.Show("Object is not initialized. Please click the initialize button first.");
@@ -396,6 +396,8 @@ namespace taxcalculator
 
             double taxbussiness = 0;
             double taxnormalruam = 0;
+
+            //ให้เงื่อนไขเมื่อSMEเช็ค
             if (SMEcheck.Checked)
             {
                 if (profit < 300000)
@@ -406,14 +408,14 @@ namespace taxcalculator
                 {
                     taxSME = 0.15;
                     taxsmeruam = profit * taxSME;
-                    MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: "
+                    MessageBox.Show("tax = 15%" + "\r\n" + "Total Tax: " //ภาษี*15%
                         + taxsmeruam.ToString("C"));
                 }
                 else
                 {
                     taxSME = 0.20;
                     taxsmeruam = profit * taxSME;
-                    MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: "
+                    MessageBox.Show("tax = 20%" + "\r\n" + "Total Tax: "//ภาษี*15%
                         + taxsmeruam.ToString("C"));
                 }
             }
@@ -435,13 +437,15 @@ namespace taxcalculator
             }
         }
 
+        //สร้างvoid เพื่อใช้ปุ่มทำงาน
         private void button1_Click(object sender, EventArgs e)
         {
-            double principle = Convert.ToDouble(txtprinciple.Text);
-            double stock;
+            double principle = Convert.ToDouble(txtprinciple.Text); //สร้างตัวเเเปรรับค่าจากtextbox
+            double stock; //สร้างตัวเเปร storkเก็บค่าราคาหุ้น
             double ruam1;
             double ruam2;
             
+            //เงื่อนไขเมื่อcheckNV
             if (checkNV.Checked)
             {
                 if (check1yearNV.Checked)
@@ -474,6 +478,8 @@ namespace taxcalculator
                 }
                 else MessageBox.Show("กรุณาเรียกทีละปี");
             }
+
+            //เงื่อนไขเมื่อcheckTESLA
             else if (checkTESLA.Checked)
             {
                 if (check1yearTesla.Checked)
@@ -507,6 +513,8 @@ namespace taxcalculator
                 else MessageBox.Show("กรุณาเรียกทีละปี");
                
             }
+
+            //เงื่อนไขเมื่อcheckMicrosoft
             else if (checkMicrosoft.Checked)
             {
                 if (check1MC.Checked)
@@ -539,6 +547,8 @@ namespace taxcalculator
                 }
                 else MessageBox.Show("กรุณาเรียกทีละปี");
             }
+
+            //เงื่อนไขเมื่อcheckApple
             else if (checkApple.Checked)
             {
                 if (check1Apple.Checked)
@@ -571,6 +581,8 @@ namespace taxcalculator
                 }
                 else MessageBox.Show("กรุณาเรียกทีละปี");
             }
+
+            //เงื่อนไขเมื่อcheckCOLA
             else if (checkCocaCola.Checked)
             {
                 if (check1Coke.Checked)

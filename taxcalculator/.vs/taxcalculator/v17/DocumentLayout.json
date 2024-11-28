@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\",
+  "WorkspaceRootPath": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|c:\\users\\acer\\documents\\github\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|c:\\users\\suphawit\\documents\\github\\project-oop-tax\\taxcalculator\\taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFBF5AB6-B772-4AC4-880A-FFB2BF3745E5}|taxcalculator\\taxcalculator.csproj|solutionrelative:taxcalculator\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeDocumentMoniker": "taxcalculator\\Form1.cs",
-              "ToolTip": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeToolTip": "taxcalculator\\Form1.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAswJQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T12:38:25.33Z",
               "IsPinned": true,
@@ -40,19 +40,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs",
               "RelativeDocumentMoniker": "taxcalculator\\Form1.cs",
-              "ToolTip": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\Form1.cs [Design]",
               "RelativeToolTip": "taxcalculator\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T07:03:38.646Z",
@@ -60,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "info.cs",
-              "DocumentMoniker": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\info.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\info.cs",
               "RelativeDocumentMoniker": "taxcalculator\\info.cs",
-              "ToolTip": "C:\\Users\\Suphawit\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\info.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\project-oop-tax\\taxcalculator\\taxcalculator\\info.cs",
               "RelativeToolTip": "taxcalculator\\info.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwA4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T06:27:33.688Z",
               "EditorCaption": ""
